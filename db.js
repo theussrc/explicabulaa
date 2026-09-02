@@ -1,0 +1,932 @@
+window.DB_DATA = {
+  "categorias": [
+    { "id": "dor-febre", "nome": "Analgésicos, Anti-inflamatórios e Antitérmicos" },
+    { "id": "relaxantes", "nome": "Relaxantes Musculares e Antiespasmódicos" },
+    { "id": "gastrointestinais", "nome": "Gastrointestinais (Estômago, Intestino, Enjoo)" },
+    { "id": "antialergicos", "nome": "Antialérgicos e Corticoides" },
+    { "id": "antibioticos", "nome": "Antibióticos e Antiparasitários" },
+    { "id": "cardiovascular", "nome": "Cardiovascular, Diabetes e Colesterol" },
+    { "id": "sistema-nervoso", "nome": "Sistema Nervoso e Psiquiátricos" },
+    { "id": "hormonios", "nome": "Hormônios e Outros" }
+  ],
+  "sintomas": [
+    { "id": "dor-de-cabeca", "nome": "Dor de Cabeça", "medicamentos": ["dipirona-novalgina", "paracetamol-tylenol", "ibuprofeno-alivium", "dorflex", "neosaldina"] },
+    { "id": "febre", "nome": "Febre", "medicamentos": ["dipirona-novalgina", "paracetamol-tylenol", "ibuprofeno-alivium"] },
+    { "id": "enjoo", "nome": "Enjoo e Náuseas", "medicamentos": ["domperidona-motilium", "metoclopramida-plasil", "vonau-flash"] },
+    { "id": "azia", "nome": "Azia e Queimação", "medicamentos": ["omeprazol-losec", "pantoprazol", "esomeprazol"] },
+    { "id": "dor-muscular", "nome": "Dor Muscular", "medicamentos": ["ibuprofeno-alivium", "diclofenaco", "nimesulida", "torsilax", "meloxicam"] },
+    { "id": "dor-de-garganta", "nome": "Dor de Garganta", "medicamentos": ["ibuprofeno-alivium", "amoxicilina", "azitromicina"] },
+    { "id": "alergia", "nome": "Alergia e Rinite", "medicamentos": ["loratadina", "desloratadina", "fexofenadina"] },
+    { "id": "infeccao", "nome": "Infecção Bacteriana", "medicamentos": ["amoxicilina", "amoxicilina-clavulanato", "azitromicina", "cefalexina", "ciprofloxacino"] },
+    { "id": "gases", "nome": "Gases e Barriga Inchada", "medicamentos": ["simeticona"] },
+    { "id": "espasmo", "nome": "Cólica e Espasmo Abdominal", "medicamentos": ["buscopan", "buscopan-composto"] },
+    { "id": "pressao-alta", "nome": "Pressão Alta", "medicamentos": ["losartana", "atenolol", "enalapril", "hidroclorotiazida"] },
+    { "id": "ansiedade", "nome": "Ansiedade", "medicamentos": ["clonazepam", "alprazolam", "diazepam"] },
+    { "id": "depressao", "nome": "Depressão e Tristeza Profunda", "medicamentos": ["fluoxetina", "sertralina", "escitalopram", "amitriptilina"] },
+    { "id": "tireoide", "nome": "Tireoide (Hipotireoidismo)", "medicamentos": ["levotiroxina"] },
+    { "id": "diabetes", "nome": "Diabetes (Glicemia Alta)", "medicamentos": ["metformina"] },
+    { "id": "colesterol", "nome": "Colesterol Alto", "medicamentos": ["sinvastatina"] },
+    { "id": "verminose", "nome": "Verminose e Parasitas", "medicamentos": ["albendazol", "ivermectina", "secnidazol", "nitazoxanida"] },
+    { "id": "insonia", "nome": "Insônia e Dificuldade para Dormir", "medicamentos": ["clonazepam", "diazepam"] },
+    { "id": "inflamacao", "nome": "Inflamação e Inchaço", "medicamentos": ["prednisona", "dexametasona", "ibuprofeno-alivium", "nimesulida"] },
+    { "id": "dor-articular", "nome": "Dor nas Articulações", "medicamentos": ["meloxicam", "diclofenaco", "cetoprofeno"] }
+  ],
+  "medicamentos": [
+    {
+      "id": "dipirona-novalgina",
+      "nome": "Dipirona Monoidratada (Novalgina)",
+      "categoria": "dor-febre",
+      "introducao": "Neste artigo, explicamos de forma simples tudo o que você precisa saber sobre a Dipirona Monoidratada antes de usar. Ela é um dos medicamentos mais populares para aliviar dores e baixar a febre, podendo ser comprada sem receita médica na maioria das farmácias.",
+      "indicacoes": ["Dor (desde dores leves de cabeça até dores musculares mais fortes).", "Febre (ajuda a baixar a temperatura corporal de forma rápida)."],
+      "como_tomar": "A Dipirona pode ser encontrada em diversas formas, como comprimidos, gotas ou xaropes. A dosagem varia de acordo com a idade e o peso.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e maiores de 15 anos", "dosagem": "20 a 40 gotas, até 4 vezes ao dia" },
+        { "faixa": "Crianças (acima de 3 meses)", "dosagem": "Varia conforme o peso (geralmente 1 gota por kg, com limite máximo por dose)" }
+      ],
+      "efeitos_comuns": ["Queda da pressão arterial (especialmente se tomada em doses altas, podendo causar tontura).", "Desconforto gástrico leve."],
+      "efeitos_graves": ["Reações alérgicas graves (inchaço no rosto, boca ou garganta, falta de ar, coceira intensa).", "Agranulocitose (uma queda rara e perigosa no número de células de defesa do sangue, que pode causar infecções graves e febre alta repentina)."],
+      "contraindicacoes": ["Tiver alergia à dipirona, a outros analgésicos semelhantes (como pirazolonas) ou a qualquer componente da fórmula.", "Estiver grávida (especialmente nos primeiros 3 meses e nos últimos 3 meses) ou amamentando, sem expressa orientação médica.", "Tiver problemas na medula óssea ou doenças relacionadas à produção de células do sangue.", "Sofrer de porfiria hepática aguda (uma doença metabólica rara) ou deficiência congênita de G6PD.", "Crianças menores de 3 meses ou pesando menos de 5 kg."],
+      "interacoes": "Evite misturar com álcool, pois pode potencializar os efeitos do álcool e causar reações adversas.",
+      "faq": [
+        { "pergunta": "Dipirona dá sono?", "resposta": "Não. A dipirona em si não tem propriedades que causam sono, mas a queda de pressão arterial que ela pode provocar ou o próprio alívio da febre e dor podem trazer uma sensação de relaxamento." },
+        { "pergunta": "Quanto tempo a Dipirona demora para fazer efeito?", "resposta": "Geralmente, o alívio da dor e da febre começa a ser sentido entre 30 a 60 minutos após tomar o medicamento." },
+        { "pergunta": "Posso tomar Dipirona de barriga vazia?", "resposta": "Sim, ela pode ser tomada com ou sem alimentos, acompanhada de um pouco de água." }
+      ]
+    },
+    {
+      "id": "paracetamol-tylenol",
+      "nome": "Paracetamol (Tylenol)",
+      "categoria": "dor-febre",
+      "introducao": "Neste artigo, explicamos tudo sobre o Paracetamol, um medicamento muito utilizado para alívio rápido de dores e febre. É considerado um dos analgésicos mais seguros quando usado na dose correta.",
+      "indicacoes": ["Dores leves a moderadas (dor de cabeça, dor de dente, dor muscular).", "Redução da febre."],
+      "como_tomar": "O Paracetamol é encontrado em gotas, xarope e comprimidos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e maiores de 12 anos", "dosagem": "500mg a 750mg, 3 a 4 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "1 gota por kg de peso (para apresentação 200mg/mL)" }
+      ],
+      "efeitos_comuns": ["Raramente causa efeitos colaterais na dose recomendada.", "Em alguns casos, leves alterações gastrointestinais."],
+      "efeitos_graves": ["Toxicidade no fígado (quando tomado em doses acima do recomendado).", "Reações alérgicas na pele (raras)."],
+      "contraindicacoes": ["Pessoas com problemas graves no fígado ou doenças hepáticas.", "Alérgicos ao paracetamol."],
+      "interacoes": "O uso com álcool aumenta significativamente o risco de danos graves ao fígado.",
+      "faq": [
+        { "pergunta": "Qual a diferença entre Paracetamol e Dipirona?", "resposta": "Ambos servem para dor e febre, mas a Dipirona costuma ser um pouco mais forte para febre e dores intensas, enquanto o Paracetamol é mais seguro para quem tem problemas de estômago." },
+        { "pergunta": "Grávida pode tomar Paracetamol?", "resposta": "Geralmente sim, o paracetamol é considerado o analgésico de escolha durante a gravidez sob orientação médica." }
+      ]
+    },
+    {
+      "id": "ibuprofeno-alivium",
+      "nome": "Ibuprofeno (Alivium)",
+      "categoria": "dor-febre",
+      "introducao": "O Ibuprofeno é um anti-inflamatório muito usado para aliviar dores, inflamações e febre. Disponível sem receita em muitas apresentações, é importante usá-lo com cuidado para proteger o estômago.",
+      "indicacoes": ["Dor de cabeça, dor de dente e dor muscular.", "Febre.", "Inflamações (artrite, tendinite).", "Cólica menstrual."],
+      "como_tomar": "Disponível em comprimidos, cápsulas e suspensão oral. Sempre tome com alimentos ou leite para proteger o estômago.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "200mg a 400mg, 3 a 4 vezes ao dia (máx. 1.200mg/dia sem receita)" },
+        { "faixa": "Crianças", "dosagem": "5 a 10mg por kg de peso, a cada 6 a 8 horas" }
+      ],
+      "efeitos_comuns": ["Azia e desconforto estomacal.", "Náuseas.", "Dor de cabeça."],
+      "efeitos_graves": ["Úlcera gástrica ou sangramento no estômago.", "Problemas renais com uso prolongado.", "Reações alérgicas graves."],
+      "contraindicacoes": ["Pessoas com úlcera gástrica ativa.", "Gestantes no último trimestre.", "Pessoas com insuficiência renal ou hepática grave."],
+      "interacoes": "Não use junto com outros anti-inflamatórios. Evite o álcool.",
+      "faq": [
+        { "pergunta": "Ibuprofeno dói o estômago?", "resposta": "Sim, pode irritar a mucosa gástrica. Por isso, tome sempre junto com alimentos e nunca de barriga vazia." }
+      ]
+    },
+    {
+      "id": "nimesulida",
+      "nome": "Nimesulida (Scaflam)",
+      "categoria": "dor-febre",
+      "introducao": "A Nimesulida é um anti-inflamatório potente usado para dores moderadas a intensas e processos inflamatórios. Exige atenção especial ao fígado e não deve ser usada por longos períodos.",
+      "indicacoes": ["Dores musculares e articulares.", "Inflamações em geral.", "Febre.", "Dor de dente."],
+      "como_tomar": "Disponível em comprimidos, sachê e suspensão. Tome sempre após as refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e maiores de 12 anos", "dosagem": "100mg, 2 vezes ao dia, após as refeições" },
+        { "faixa": "Crianças menores de 12 anos", "dosagem": "Contraindicado" }
+      ],
+      "efeitos_comuns": ["Náuseas e azia.", "Diarreia.", "Tontura."],
+      "efeitos_graves": ["Dano ao fígado (hepatotoxicidade).", "Sangramento gastrointestinal."],
+      "contraindicacoes": ["Crianças menores de 12 anos.", "Gestantes e lactantes.", "Pessoas com problemas hepáticos."],
+      "interacoes": "Evite álcool rigorosamente.",
+      "faq": [
+        { "pergunta": "Nimesulida faz mal ao fígado?", "resposta": "Pode sim, especialmente em uso prolongado. Nunca tome por mais tempo do que o indicado pelo médico." }
+      ]
+    },
+    {
+      "id": "cetoprofeno",
+      "nome": "Cetoprofeno (Profenid)",
+      "categoria": "dor-febre",
+      "introducao": "O Cetoprofeno é um anti-inflamatório não esteroidal (AINE) usado para tratar dores e inflamações moderadas a intensas.",
+      "indicacoes": ["Artrite reumatoide e osteoartrite.", "Dores musculares.", "Cólica menstrual."],
+      "como_tomar": "Disponível em comprimidos e gel. Tome os comprimidos com alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "50mg a 100mg, 2 a 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Não recomendado para menores de 15 anos" }
+      ],
+      "efeitos_comuns": ["Desconforto gástrico.", "Náuseas."],
+      "efeitos_graves": ["Úlcera gástrica.", "Reações alérgicas cutâneas."],
+      "contraindicacoes": ["Úlcera péptica ativa.", "Gestantes."],
+      "interacoes": "Evite associar com outros anti-inflamatórios.",
+      "faq": [
+        { "pergunta": "Cetoprofeno é mais forte que Ibuprofeno?", "resposta": "Sim, em geral o cetoprofeno tem ação anti-inflamatória mais potente." }
+      ]
+    },
+    {
+      "id": "diclofenaco",
+      "nome": "Diclofenaco Sódico (Cataflam)",
+      "categoria": "dor-febre",
+      "introducao": "O Diclofenaco é um anti-inflamatório amplamente utilizado para dores agudas e crônicas.",
+      "indicacoes": ["Dores musculares e articulares.", "Inflamações após cirurgias.", "Cólica menstrual."],
+      "como_tomar": "Comprimidos devem ser tomados com água e alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "50mg, 2 a 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Não recomendado para menores de 14 anos" }
+      ],
+      "efeitos_comuns": ["Dor de estômago.", "Náusea."],
+      "efeitos_graves": ["Sangramento gastrointestinal.", "Elevação da pressão arterial."],
+      "contraindicacoes": ["Gestantes.", "Úlcera ativa."],
+      "interacoes": "Pode reduzir o efeito de medicamentos para pressão.",
+      "faq": [
+        { "pergunta": "Diclofenaco e Cataflam são a mesma coisa?", "resposta": "Sim, Cataflam é o nome comercial do diclofenaco de potássio." }
+      ]
+    },
+    {
+      "id": "meloxicam",
+      "nome": "Meloxicam",
+      "categoria": "dor-febre",
+      "introducao": "O Meloxicam é um anti-inflamatório muito usado para artrite e dores articulares.",
+      "indicacoes": ["Osteoartrite.", "Artrite reumatoide.", "Dores nas costas."],
+      "como_tomar": "Comprimidos, 1 vez ao dia com alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "7,5mg a 15mg, 1 vez ao dia" },
+        { "faixa": "Crianças", "dosagem": "Sob orientação médica" }
+      ],
+      "efeitos_comuns": ["Desconforto gástrico leve.", "Diarreia."],
+      "efeitos_graves": ["Sangramento gastrointestinal."],
+      "contraindicacoes": ["Gestantes.", "Pessoas com úlcera ativa."],
+      "interacoes": "Evite usar com outros AINEs.",
+      "faq": [
+        { "pergunta": "Meloxicam dói o estômago?", "resposta": "Menos do que outros anti-inflamatórios, mas pode causar desconforto." }
+      ]
+    },
+    {
+      "id": "aas-aspirina",
+      "nome": "Ácido Acetilsalicílico (Aspirina / AAS)",
+      "categoria": "dor-febre",
+      "introducao": "A Aspirina trata dor e febre e, em doses baixas, previne infartos e AVC.",
+      "indicacoes": ["Dores leves e febre.", "Prevenção de infarto e AVC."],
+      "como_tomar": "Tome com alimentos e bastante água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos (dor)", "dosagem": "500mg a 1g, a cada 4 a 6 horas" },
+        { "faixa": "Prevenção cardiovascular", "dosagem": "100mg, 1 vez ao dia" }
+      ],
+      "efeitos_comuns": ["Irritação gástrica.", "Náusea."],
+      "efeitos_graves": ["Sangramento.", "Síndrome de Reye em crianças."],
+      "contraindicacoes": ["Crianças e adolescentes.", "Úlcera ativa."],
+      "interacoes": "Potencializa anticoagulantes.",
+      "faq": [
+        { "pergunta": "Por que não dar Aspirina para crianças?", "resposta": "Risco de Síndrome de Reye, uma doença rara e gravíssima no cérebro e fígado." }
+      ]
+    },
+    {
+      "id": "dorflex",
+      "nome": "Dorflex",
+      "categoria": "relaxantes",
+      "introducao": "O Dorflex combina Dipirona, Orfenadrina e Cafeína para tratar dores de cabeça tensionais e dores musculares.",
+      "indicacoes": ["Dor de cabeça tensional.", "Dores musculares leves."],
+      "como_tomar": "1 a 2 comprimidos com água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "1 a 2 comprimidos, até 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Não recomendado para menores de 15 anos" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Tontura."],
+      "efeitos_graves": ["Reações alérgicas à dipirona."],
+      "contraindicacoes": ["Glaucoma.", "Gestantes."],
+      "interacoes": "Cuidado com outras fontes de cafeína.",
+      "faq": [
+        { "pergunta": "Dorflex dá sono?", "resposta": "A orfenadrina pode causar leve sedação, contrabalanceada pela cafeína." }
+      ]
+    },
+    {
+      "id": "torsilax",
+      "nome": "Torsilax",
+      "categoria": "relaxantes",
+      "introducao": "O Torsilax combina Diclofenaco, Carisoprodol, Paracetamol e Cafeína para dores musculares intensas.",
+      "indicacoes": ["Contraturas musculares.", "Lombalgias."],
+      "como_tomar": "1 comprimido com água e alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "1 comprimido, 2 a 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Contraindicado" }
+      ],
+      "efeitos_comuns": ["Sonolência intensa.", "Tontura."],
+      "efeitos_graves": ["Dependência física."],
+      "contraindicacoes": ["Gestantes.", "Histórico de dependência."],
+      "interacoes": "Evite dirigir após o uso.",
+      "faq": [
+        { "pergunta": "Torsilax dá sono?", "resposta": "Sim, a sonolência é muito comum." }
+      ]
+    },
+    {
+      "id": "neosaldina",
+      "nome": "Neosaldina",
+      "categoria": "relaxantes",
+      "introducao": "A Neosaldina combina Dipirona, Isometepteno e Cafeína para dores de cabeça e enxaquecas.",
+      "indicacoes": ["Dor de cabeça tensional.", "Enxaqueca leve."],
+      "como_tomar": "1 a 2 comprimidos com água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "1 a 2 comprimidos, até 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Não recomendado para menores de 15 anos" }
+      ],
+      "efeitos_comuns": ["Agitação leve.", "Insônia."],
+      "efeitos_graves": ["Reações alérgicas à dipirona."],
+      "contraindicacoes": ["Hipertensão grave.", "Gestantes."],
+      "interacoes": "Evite misturar com outros estimulantes.",
+      "faq": [
+        { "pergunta": "Neosaldina é bom para enxaqueca?", "resposta": "Funciona muito bem para enxaquecas leves a moderadas." }
+      ]
+    },
+    {
+      "id": "buscopan",
+      "nome": "Buscopan (Escopolamina)",
+      "categoria": "relaxantes",
+      "introducao": "O Buscopan é um antiespasmódico eficaz para aliviar cólicas e espasmos abdominais.",
+      "indicacoes": ["Cólica intestinal e gástrica.", "Cólica urinária e menstrual."],
+      "como_tomar": "Comprimidos ou gotas com água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "10mg a 20mg, 3 a 5 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Sob orientação pediátrica" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Taquicardia leve."],
+      "efeitos_graves": ["Retenção urinária."],
+      "contraindicacoes": ["Glaucoma.", "Dificuldade para urinar."],
+      "interacoes": "Cuidado com outros anticolinérgicos.",
+      "faq": [
+        { "pergunta": "Buscopan ajuda na cólica menstrual?", "resposta": "Sim, relaxa os espasmos musculares." }
+      ]
+    },
+    {
+      "id": "buscopan-composto",
+      "nome": "Buscopan Composto",
+      "categoria": "relaxantes",
+      "introducao": "Combina o antiespasmódico com Dipirona para alívio de cólicas intensas.",
+      "indicacoes": ["Cólicas fortes com dor."],
+      "como_tomar": "1 a 2 comprimidos com água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "1 a 2 comprimidos, 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Sob prescrição médica" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Queda de pressão."],
+      "efeitos_graves": ["Alergia à dipirona."],
+      "contraindicacoes": ["Glaucoma.", "Gravidez."],
+      "interacoes": "Mesmas precauções da dipirona.",
+      "faq": [
+        { "pergunta": "Qual a diferença pro simples?", "resposta": "O composto contém dipirona para dor intensa." }
+      ]
+    },
+    {
+      "id": "omeprazol-losec",
+      "nome": "Omeprazol (Losec)",
+      "categoria": "gastrointestinais",
+      "introducao": "O Omeprazol reduz a acidez gástrica e trata gastrite, úlceras e refluxo.",
+      "indicacoes": ["Refluxo gastroesofágico.", "Gastrite e úlceras."],
+      "como_tomar": "Tomar em jejum pela manhã, 30 min antes do café.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "20mg a 40mg por dia em jejum" },
+        { "faixa": "Crianças", "dosagem": "Sob orientação pediátrica" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Diarreia ou prisão de ventre."],
+      "efeitos_graves": ["Uso por anos pode reduzir absorção de B12."],
+      "contraindicacoes": ["Alérgicos ao omeprazol."],
+      "interacoes": "Pode afetar absorção de alguns medicamentos.",
+      "faq": [
+        { "pergunta": "Por que tomar em jejum?", "resposta": "Para bloquear a produção de ácido antes da refeição." }
+      ]
+    },
+    {
+      "id": "pantoprazol",
+      "nome": "Pantoprazol",
+      "categoria": "gastrointestinais",
+      "introducao": "Protetor gástrico para azia, refluxo e gastrite, com poucas interações.",
+      "indicacoes": ["Refluxo gastroesofágico.", "Úlcera gástrica."],
+      "como_tomar": "Em jejum, 30 minutos antes do café da manhã.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "20mg a 40mg, 1 vez ao dia" },
+        { "faixa": "Crianças", "dosagem": "Sob consulta médica" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Gases."],
+      "efeitos_graves": ["Deficiência de magnésio a longo prazo."],
+      "contraindicacoes": ["Alérgicos a inibidores de bomba de prótons."],
+      "interacoes": "Baixa taxa de interações medicamentosas.",
+      "faq": [
+        { "pergunta": "Pantoprazol é igual ao Omeprazol?", "resposta": "Pertencem à mesma família, mas o pantoprazol tem menos interações." }
+      ]
+    },
+    {
+      "id": "esomeprazol",
+      "nome": "Esomeprazol",
+      "categoria": "gastrointestinais",
+      "introducao": "Inibidor de bomba de prótons potente e duradouro para refluxo severo.",
+      "indicacoes": ["Doença do refluxo gastroesofágico (DRGE).", "Erosões no esôfago."],
+      "como_tomar": "1 cápsula ao dia antes da refeição.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "20mg a 40mg, 1 vez ao dia" },
+        { "faixa": "Crianças", "dosagem": "Sob orientação médica" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Náusea."],
+      "efeitos_graves": ["Fraturas ósseas com uso por anos."],
+      "contraindicacoes": ["Alérgicos a esomeprazol."],
+      "interacoes": "Evite com clopidogrel sem consultar médico.",
+      "faq": [
+        { "pergunta": "É mais forte que Omeprazol?", "resposta": "Sim, proporciona controle de acidez mais duradouro." }
+      ]
+    },
+    {
+      "id": "simeticona",
+      "nome": "Simeticona (Luftal)",
+      "categoria": "gastrointestinais",
+      "introducao": "Elimina bolhas de gás no estômago e intestino, aliviando o estufamento.",
+      "indicacoes": ["Gases e estufamento.", "Barriga inchada."],
+      "como_tomar": "Gotas ou comprimidos após as refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "40mg a 125mg após refeições" },
+        { "faixa": "Bebês e crianças", "dosagem": "Gotas conforme o peso" }
+      ],
+      "efeitos_comuns": ["Sem efeitos colaterais relevantes."],
+      "efeitos_graves": ["Não absorvido pelo corpo, extremamente seguro."],
+      "contraindicacoes": ["Alergia à simeticona."],
+      "interacoes": "Nenhuma interação conhecida.",
+      "faq": [
+        { "pergunta": "Bebê pode tomar?", "resposta": "Sim, muito usada para cólicas de gases em bebês." }
+      ]
+    },
+    {
+      "id": "domperidona-motilium",
+      "nome": "Domperidona (Motilium)",
+      "categoria": "gastrointestinais",
+      "introducao": "Acelera o esvaziamento do estômago e combate enjoo e empachamento.",
+      "indicacoes": ["Enjoo e náuseas.", "Estômago pesado."],
+      "como_tomar": "15 a 30 minutos antes das refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "10mg, 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Sob orientação médica" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Dor de cabeça."],
+      "efeitos_graves": ["Arritmias em doses elevadas."],
+      "contraindicacoes": ["Problemas cardíacos."],
+      "interacoes": "Evite com antifúngicos.",
+      "faq": [
+        { "pergunta": "É igual ao Plasil?", "resposta": "Não, causa menos sonolência que o Plasil." }
+      ]
+    },
+    {
+      "id": "metoclopramida-plasil",
+      "nome": "Metoclopramida (Plasil)",
+      "categoria": "gastrointestinais",
+      "introducao": "Combate enjoo e vômitos fortes, agilizando a digestão.",
+      "indicacoes": ["Vômitos e náuseas intensas."],
+      "como_tomar": "30 minutos antes das refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "10mg, 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Sob prescrição médica" }
+      ],
+      "efeitos_comuns": ["Sonolência.", "Agitação."],
+      "efeitos_graves": ["Movimentos involuntários com uso longo."],
+      "contraindicacoes": ["Epilepsia.", "Bebês prematuros."],
+      "interacoes": "Aumenta a sonolência do álcool.",
+      "faq": [
+        { "pergunta": "Plasil dá sono?", "resposta": "Sim, a sonolência é muito frequente." }
+      ]
+    },
+    {
+      "id": "vonau-flash",
+      "nome": "Vonau Flash (Ondansetrona)",
+      "categoria": "gastrointestinais",
+      "introducao": "Antiemético potente em comprimido que dissolve na boca para enjoo grave.",
+      "indicacoes": ["Vômitos intensos e náuseas severas."],
+      "como_tomar": "Dissolver na língua sem precisar de água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "4mg a 8mg até 3 vezes ao dia" },
+        { "faixa": "Crianças acima de 4 anos", "dosagem": "Sob prescrição médica" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Prisão de ventre."],
+      "efeitos_graves": ["Alterações no ritmo cardíaco em doses altas."],
+      "contraindicacoes": ["Problemas de ritmo cardíaco."],
+      "interacoes": "Exige receita médica.",
+      "faq": [
+        { "pergunta": "Precisa de receita?", "resposta": "Sim, remédio tarja vermelha com retenção." }
+      ]
+    },
+    {
+      "id": "loratadina",
+      "nome": "Loratadina (Claritin)",
+      "categoria": "antialergicos",
+      "introducao": "Antialérgico popular que alivia espirros, rinite e coceira sem dar sono.",
+      "indicacoes": ["Rinite alérgica.", "Urticária e coceira."],
+      "como_tomar": "1 comprimido ao dia com água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e > 12 anos", "dosagem": "10mg, 1 vez ao dia" },
+        { "faixa": "Crianças (2 a 12 anos)", "dosagem": "5mg a 10mg ao dia" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Dor de cabeça leve."],
+      "efeitos_graves": ["Raríssimos."],
+      "contraindicacoes": ["Alérgicos à loratadina."],
+      "interacoes": "Muito segura.",
+      "faq": [
+        { "pergunta": "Loratadina dá sono?", "resposta": "Raramente, foi feita para não dar sono." }
+      ]
+    },
+    {
+      "id": "desloratadina",
+      "nome": "Desloratadina (Desalex)",
+      "categoria": "antialergicos",
+      "introducao": "Antialérgico moderno e potente para rinite e alergias de pele.",
+      "indicacoes": ["Rinite alérgica.", "Coceira e urticária."],
+      "como_tomar": "1 vez ao dia.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "5mg, 1 vez ao dia" },
+        { "faixa": "Crianças", "dosagem": "Xarope pediátrico sob orientação" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Cansaço leve."],
+      "efeitos_graves": ["Raros."],
+      "contraindicacoes": ["Alérgicos à desloratadina."],
+      "interacoes": "Sem interações com alimentos.",
+      "faq": [
+        { "pergunta": "É melhor que Loratadina?", "resposta": "É a versão purificada, agindo mais rápido." }
+      ]
+    },
+    {
+      "id": "fexofenadina",
+      "nome": "Fexofenadina (Allegra)",
+      "categoria": "antialergicos",
+      "introducao": "Antialérgico de 3ª geração ultra-moderno sem efeito sedativo.",
+      "indicacoes": ["Rinite alérgica.", "Urticária crônica."],
+      "como_tomar": "1 vez ao dia com água. Evitar suco de frutas junto.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "120mg ou 180mg ao dia" },
+        { "faixa": "Crianças", "dosagem": "30mg duas vezes ao dia" }
+      ],
+      "efeitos_comuns": ["Tontura leve.", "Náusea."],
+      "efeitos_graves": ["Raros."],
+      "contraindicacoes": ["Alérgicos à fexofenadina."],
+      "interacoes": "Sucos cítricos reduzem a absorção.",
+      "faq": [
+        { "pergunta": "Dá sono?", "resposta": "Não dá sono absolutamente." }
+      ]
+    },
+    {
+      "id": "prednisona",
+      "nome": "Prednisona (Meticorten)",
+      "categoria": "antialergicos",
+      "introducao": "Corticoide potente para inflamações e alergias graves. Exige receita.",
+      "indicacoes": ["Alergias graves.", "Asma.", "Doenças autoimunes."],
+      "como_tomar": "Tomar pela manhã com alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "5mg a 60mg ao dia conforme indicação" },
+        { "faixa": "Crianças", "dosagem": "Conforme peso" }
+      ],
+      "efeitos_comuns": ["Aumento de apetite.", "Insônia.", "Retenção de líquidos."],
+      "efeitos_graves": ["Aumento de pressão e glicose com uso longo."],
+      "contraindicacoes": ["Infecções fúngicas."],
+      "interacoes": "Nunca parar o tratamento de repente.",
+      "faq": [
+        { "pergunta": "Posso parar de repente?", "resposta": "Não, o desmame deve ser gradual." }
+      ]
+    },
+    {
+      "id": "dexametasona",
+      "nome": "Dexametasona (Decadron)",
+      "categoria": "antialergicos",
+      "introducao": "Corticoide de alta potência para urgências alérgicas e inchaços.",
+      "indicacoes": ["Inflamações severas.", "Reações alérgicas agudas."],
+      "como_tomar": "Conforme prescrição médica estrita.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "0,5mg a 9mg por dia" },
+        { "faixa": "Crianças", "dosagem": "Sob orientação médica" }
+      ],
+      "efeitos_comuns": ["Insônia.", "Retenção de líquidos."],
+      "efeitos_graves": ["Supressão imune com uso longo."],
+      "contraindicacoes": ["Infecções não tratadas."],
+      "interacoes": "Cuidado com vacinas de vírus vivo.",
+      "faq": [
+        { "pergunta": "É mais forte que Prednisona?", "resposta": "Sim, cerca de 7 vezes mais potente." }
+      ]
+    },
+    {
+      "id": "amoxicilina",
+      "nome": "Amoxicilina (Amoxil)",
+      "categoria": "antibioticos",
+      "introducao": "Antibiótico para tratar infecções de garganta, ouvido, sinusite e urinária.",
+      "indicacoes": ["Amigdalite bacteriana.", "Otite e sinusite."],
+      "como_tomar": "A cada 8 ou 12 horas conforme prescrição médica.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "500mg a 875mg a cada 8h ou 12h" },
+        { "faixa": "Crianças", "dosagem": "Suspensão conforme o peso" }
+      ],
+      "efeitos_comuns": ["Diarreia.", "Náusea."],
+      "efeitos_graves": ["Alergia à penicilina."],
+      "contraindicacoes": ["Alérgicos à penicilina."],
+      "interacoes": "Pode reduzir efeito de anticoncepcionais.",
+      "faq": [
+        { "pergunta": "Preciso tomar até o fim?", "resposta": "Sim, cumpra todo o prazo para evitar bactérias resistentes." }
+      ]
+    },
+    {
+      "id": "amoxicilina-clavulanato",
+      "nome": "Amoxicilina + Clavulanato (Clavulin)",
+      "categoria": "antibioticos",
+      "introducao": "Antibiótico reforçado contra bactérias resistentes.",
+      "indicacoes": ["Sinusite severa.", "Pneumonia e otite recorrente."],
+      "como_tomar": "Tomar junto com as refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "875mg a cada 12 horas" },
+        { "faixa": "Crianças", "dosagem": "Suspensão sob prescrição" }
+      ],
+      "efeitos_comuns": ["Diarreia (comum).", "Náusea."],
+      "efeitos_graves": ["Reação alérgica."],
+      "contraindicacoes": ["Alergia à penicilina."],
+      "interacoes": "Cuidado com anticoagulantes.",
+      "faq": [
+        { "pergunta": "Dá mais diarreia?", "resposta": "Sim, o clavulanato pode soltar mais o intestino." }
+      ]
+    },
+    {
+      "id": "azitromicina",
+      "nome": "Azitromicina (Astro)",
+      "categoria": "antibioticos",
+      "introducao": "Antibiótico prático com tratamento curto (geralmente 3 a 5 dias).",
+      "indicacoes": ["Pneumonia.", "Amigdalite e bronquite."],
+      "como_tomar": "1 comprimido ao dia, longe das refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "500mg ao dia por 3 a 5 dias" },
+        { "faixa": "Crianças", "dosagem": "Conforme o peso" }
+      ],
+      "efeitos_comuns": ["Diarreia.", "Dor de barriga."],
+      "efeitos_graves": ["Arritmia em cardíacos."],
+      "contraindicacoes": ["Alérgicos a macrolídeos."],
+      "interacoes": "Evitar tomar junto com antiácidos.",
+      "faq": [
+        { "pergunta": "3 dias chegam?", "resposta": "Sim, ela continua agindo no corpo por dias." }
+      ]
+    },
+    {
+      "id": "cefalexina",
+      "nome": "Cefalexina (Keflex)",
+      "categoria": "antibioticos",
+      "introducao": "Antibiótico muito usado para infecções na pele, ossos e infecção urinária.",
+      "indicacoes": ["Infecção de pele.", "Infecção urinária."],
+      "como_tomar": "A cada 6 horas.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "500mg a cada 6 horas" },
+        { "faixa": "Crianças", "dosagem": "Suspensão conforme o peso" }
+      ],
+      "efeitos_comuns": ["Diarreia.", "Náusea."],
+      "efeitos_graves": ["Colite."],
+      "contraindicacoes": ["Alérgicos a cefalosporinas."],
+      "interacoes": "Avisar o médico sobre outros remédios.",
+      "faq": [
+        { "pergunta": "Serve para pele?", "resposta": "É um dos mais indicados para infecções cutâneas." }
+      ]
+    },
+    {
+      "id": "ciprofloxacino",
+      "nome": "Ciprofloxacino (Cipro)",
+      "categoria": "antibioticos",
+      "introducao": "Antibiótico potente para infecção urinária forte e infecções intestinais.",
+      "indicacoes": ["Infecção urinária severa.", "Diarreia por bactéria."],
+      "como_tomar": "A cada 12 horas com bastante água. Evitar leite junto.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "500mg a cada 12 horas" },
+        { "faixa": "Crianças", "dosagem": "Contraindicado em geral" }
+      ],
+      "efeitos_comuns": ["Náusea.", "Tontura."],
+      "efeitos_graves": ["Dor no tendão de Aquiles."],
+      "contraindicacoes": ["Crianças e gestantes."],
+      "interacoes": "Não tomar com leite ou antiácidos.",
+      "faq": [
+        { "pergunta": "Por que não tomar com leite?", "resposta": "O cálcio impede o remédio de ser absorvido." }
+      ]
+    },
+    {
+      "id": "ivermectina",
+      "nome": "Ivermectina (Revectina)",
+      "categoria": "antibioticos",
+      "introducao": "Antiparasitário para sarna, piolho e vermes específicos.",
+      "indicacoes": ["Sarna (escabiose).", "Piolho e vermes."],
+      "como_tomar": "Em jejum com água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos (>15kg)", "dosagem": "Dose única conforme peso" },
+        { "faixa": "Crianças (<15kg)", "dosagem": "Contraindicado" }
+      ],
+      "efeitos_comuns": ["Tontura.", "Náusea."],
+      "efeitos_graves": ["Raros."],
+      "contraindicacoes": ["Crianças < 15kg e gestantes."],
+      "interacoes": "Cuidado com anticoagulantes.",
+      "faq": [
+        { "pergunta": "Serve para dengue ou covid?", "resposta": "Não, apenas para parasitas e vermes." }
+      ]
+    },
+    {
+      "id": "albendazol",
+      "nome": "Albendazol",
+      "categoria": "antibioticos",
+      "introducao": "Vermífugo de amplo espectro para tratar lombrigas e parasitas de intestino.",
+      "indicacoes": ["Lombriga (ascaridíase).", "Oxiúro e amarelão."],
+      "como_tomar": "Mastigar o comprimido ou tomar suspensão.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e > 2 anos", "dosagem": "400mg em dose única" },
+        { "faixa": "Crianças < 2 anos", "dosagem": "Consultar pediatra" }
+      ],
+      "efeitos_comuns": ["Dor de barriga leve."],
+      "efeitos_graves": ["Raros em dose única."],
+      "contraindicacoes": ["Gestantes."],
+      "interacoes": "Muito seguro.",
+      "faq": [
+        { "pergunta": "Precisa repetir em 15 dias?", "resposta": "Em alguns vermes como oxiúro sim, consulte a orientação médica." }
+      ]
+    },
+    {
+      "id": "secnidazol",
+      "nome": "Secnidazol",
+      "categoria": "antibioticos",
+      "introducao": "Trata ameba, giárdia e infecções vaginais em dose única.",
+      "indicacoes": ["Giárdia e ameba.", "Vaginose bacteriana."],
+      "como_tomar": "Dose única com alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "2g em dose única" },
+        { "faixa": "Crianças", "dosagem": "Conforme peso em dose única" }
+      ],
+      "efeitos_comuns": ["Gosto metálico na boca.", "Náusea."],
+      "efeitos_graves": ["Reação grave com álcool."],
+      "contraindicacoes": ["Gestantes e consumo de álcool."],
+      "interacoes": "Proibido consumir álcool por 48 horas.",
+      "faq": [
+        { "pergunta": "Posso beber cerveja?", "resposta": "Não, causa enjoo e mal-estar severo." }
+      ]
+    },
+    {
+      "id": "nitazoxanida",
+      "nome": "Nitazoxanida (Annita)",
+      "categoria": "antibioticos",
+      "introducao": "Antiparasitário moderno para gastroenterites e diarreia por parasitas.",
+      "indicacoes": ["Giárdia.", "Ameba e diarreias parasitárias."],
+      "como_tomar": "Tomar junto com as refeições por 3 dias.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "500mg 2 vezes ao dia por 3 dias" },
+        { "faixa": "Crianças", "dosagem": "Xarope 2 vezes ao dia por 3 dias" }
+      ],
+      "efeitos_comuns": ["Urina esverdeada ou bem amarela (normal).", "Dor abdominal."],
+      "efeitos_graves": ["Raros."],
+      "contraindicacoes": ["Alergia à nitazoxanida."],
+      "interacoes": "Tomar sempre com comida.",
+      "faq": [
+        { "pergunta": "Urina amarela é normal?", "resposta": "Sim, o remédio solta um corante inofensivo na urina." }
+      ]
+    },
+    {
+      "id": "losartana",
+      "nome": "Losartana Potássica",
+      "categoria": "cardiovascular",
+      "introducao": "Remédio contínuo para controle da pressão alta e proteção dos rins.",
+      "indicacoes": ["Pressão alta (hipertensão).", "Proteção renal em diabéticos."],
+      "como_tomar": "1 vez ao dia com água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "50mg a 100mg ao dia" },
+        { "faixa": "Idosos", "dosagem": "Começar com 25mg a 50mg" }
+      ],
+      "efeitos_comuns": ["Tontura leve no início."],
+      "efeitos_graves": ["Queda brusca de pressão."],
+      "contraindicacoes": ["Gestantes (proibido na gravidez)."],
+      "interacoes": "Evitar tomar suplementos de potássio.",
+      "faq": [
+        { "pergunta": "Posso parar se a pressão baixar?", "resposta": "Não! A pressão baixou por causa do remédio." }
+      ]
+    },
+    {
+      "id": "atenolol",
+      "nome": "Atenolol",
+      "categoria": "cardiovascular",
+      "introducao": "Desacelera o coração e controla a pressão e taquicardia.",
+      "indicacoes": ["Pressão alta.", "Coração acelerado (taquicardia)."],
+      "como_tomar": "1 vez ao dia de manhã.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "25mg a 100mg ao dia" },
+        { "faixa": "Crianças", "dosagem": "Sob prescrição" }
+      ],
+      "efeitos_comuns": ["Cansaço.", "Pés e mãos frios."],
+      "efeitos_graves": ["Falta de ar em asmáticos."],
+      "contraindicacoes": ["Asma e bradicardia (coração muito lento)."],
+      "interacoes": "Não parar de repente.",
+      "faq": [
+        { "pergunta": "Asmático pode tomar?", "resposta": "Não, pode dar crise de falta de ar." }
+      ]
+    },
+    {
+      "id": "metformina",
+      "nome": "Metformina (Glifage)",
+      "categoria": "cardiovascular",
+      "introducao": "Medicamento principal para controle do Diabetes Tipo 2 e glicemia.",
+      "indicacoes": ["Diabetes Tipo 2.", "Sintomas de ovário policístico."],
+      "como_tomar": "Junto das refeições principais.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "500mg a 2.000mg ao dia" },
+        { "faixa": "Idosos", "dosagem": "Ajuste conforme os rins" }
+      ],
+      "efeitos_comuns": ["Diarreia e enjoo no começo."],
+      "efeitos_graves": ["Raros."],
+      "contraindicacoes": ["Problemas renais graves."],
+      "interacoes": "Suspender antes de exames com contraste.",
+      "faq": [
+        { "pergunta": "Metformina emagrece?", "resposta": "Pode dar leve redução de apetite, mas é para diabetes." }
+      ]
+    },
+    {
+      "id": "sinvastatina",
+      "nome": "Sinvastatina",
+      "categoria": "cardiovascular",
+      "introducao": "Reduz o colesterol ruim (LDL) e previne infartos e derrames.",
+      "indicacoes": ["Colesterol alto.", "Prevenção de infarto."],
+      "como_tomar": "1 vez ao dia à noite.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "20mg a 40mg à noite" },
+        { "faixa": "Crianças", "dosagem": "Sob endocrinologista" }
+      ],
+      "efeitos_comuns": ["Dor muscular leve."],
+      "efeitos_graves": ["Dor muscular severa (mialgia)."],
+      "contraindicacoes": ["Gestantes e doença no fígado."],
+      "interacoes": "Evitar suco de toranja (grapefruit).",
+      "faq": [
+        { "pergunta": "Por que tomar à noite?", "resposta": "O fígado fabrica mais colesterol enquanto dormimos." }
+      ]
+    },
+    {
+      "id": "hidroclorotiazida",
+      "nome": "Hidroclorotiazida",
+      "categoria": "cardiovascular",
+      "introducao": "Diurético para pressão alta e eliminação de retenção de líquidos.",
+      "indicacoes": ["Pressão alta.", "Inchaço nas pernas."],
+      "como_tomar": "Pela manhã ao acordar.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "12,5mg a 25mg pela manhã" },
+        { "faixa": "Idosos", "dosagem": "12,5mg ao dia" }
+      ],
+      "efeitos_comuns": ["Vontade de urinar constante.", "Câimbras."],
+      "efeitos_graves": ["Queda de potássio."],
+      "contraindicacoes": ["Problemas renais graves."],
+      "interacoes": "Pode aumentar ácido úrico.",
+      "faq": [
+        { "pergunta": "Por que tomar de manhã?", "resposta": "Para não precisar acordar à noite para ir ao banheiro." }
+      ]
+    },
+    {
+      "id": "enalapril",
+      "nome": "Enalapril",
+      "categoria": "cardiovascular",
+      "introducao": "Remédio clássico para pressão alta e insuficiência cardíaca.",
+      "indicacoes": ["Pressão alta.", "Insuficiência cardíaca."],
+      "como_tomar": "1 ou 2 vezes ao dia.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "5mg a 40mg ao dia" },
+        { "faixa": "Idosos", "dosagem": "Iniciar com doses baixas" }
+      ],
+      "efeitos_comuns": ["Tosse seca chata (característica)."],
+      "efeitos_graves": ["Inchaço nos lábios (alergia)."],
+      "contraindicacoes": ["Gestantes."],
+      "interacoes": "Atenção com suplementos de potássio.",
+      "faq": [
+        { "pergunta": "Causa tosse?", "resposta": "Sim, a tosse seca é um efeito colateral conhecido do Enalapril." }
+      ]
+    },
+    {
+      "id": "espironolactona",
+      "nome": "Espironolactona",
+      "categoria": "cardiovascular",
+      "introducao": "Diurético que poupa potássio, usado para pressão e acne hormonal.",
+      "indicacoes": ["Insuficiência cardíaca.", "Acne hormonal em mulheres."],
+      "como_tomar": "Junto das refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "25mg a 100mg ao dia" },
+        { "faixa": "Mulheres (acne)", "dosagem": "50mg a 100mg ao dia" }
+      ],
+      "efeitos_comuns": ["Sensibilidade nas mamas.", "Aumento de potássio."],
+      "efeitos_graves": ["Potássio muito alto no sangue."],
+      "contraindicacoes": ["Insuficiência renal grave."],
+      "interacoes": "Não tomar potássio extra.",
+      "faq": [
+        { "pergunta": "Ajuda na acne?", "resposta": "Sim, bloqueia hormônios masculinos que causam espinhas em mulheres." }
+      ]
+    },
+    {
+      "id": "clonazepam",
+      "nome": "Clonazepam (Rivotril)",
+      "categoria": "sistema-nervoso",
+      "introducao": "Calmante tarja preta para ansiedade, pânico e convulsões.",
+      "indicacoes": ["Síndrome do pânico.", "Ansiedade e epilepsia."],
+      "como_tomar": "Gotas ou comprimidos sob orientação médica estrita.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "0,5mg a 2mg ao dia (conforme receita)" },
+        { "faixa": "Crianças", "dosagem": "Apenas sob neuropediatra" }
+      ],
+      "efeitos_comuns": ["Sonolência.", "Tontura e perda de equilíbrio."],
+      "efeitos_graves": ["Dependência e vício."],
+      "contraindicacoes": ["Glaucoma e miastenia."],
+      "interacoes": "Proibido consumir álcool.",
+      "faq": [
+        { "pergunta": "Clonazepam vicia?", "resposta": "Sim, causa dependência física e psíquica se usado sem controle." }
+      ]
+    },
+    {
+      "id": "fluoxetina",
+      "nome": "Fluoxetina (Prozac)",
+      "categoria": "sistema-nervoso",
+      "introducao": "Antidepressivo famoso para tratar depressão, ansiedade e TOC.",
+      "indicacoes": ["Depressão.", "TOC e bulimia."],
+      "como_tomar": "1 vez ao dia de manhã.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "20mg a 60mg ao dia" },
+        { "faixa": "Adolescentes", "dosagem": "10mg a 20mg ao dia" }
+      ],
+      "efeitos_comuns": ["Enjoo no início.", "Insônia ou sonolência."],
+      "efeitos_graves": ["Pensamentos ruins no início do tratamento."],
+      "contraindicacoes": ["Uso de remédios tipo IMAO."],
+      "interacoes": "Leva de 3 a 4 semanas para fazer efeito.",
+      "faq": [
+        { "pergunta": "Demora para agir?", "resposta": "Sim, o efeito no humor leva de 3 a 4 semanas." }
+      ]
+    },
+    {
+      "id": "sertralina",
+      "nome": "Sertralina (Zoloft)",
+      "categoria": "sistema-nervoso",
+      "introducao": "Antidepressivo muito seguro e prescrito para ansiedade e depressão.",
+      "indicacoes": ["Depressão.", "Ansiedade e pânico."],
+      "como_tomar": "1 vez ao dia sempre no mesmo horário.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "50mg a 150mg ao dia" },
+        { "faixa": "Crianças (>6 anos TOC)", "dosagem": "25mg a 50mg ao dia" }
+      ],
+      "efeitos_comuns": ["Diarreia.", "Boca seca e tontura."],
+      "efeitos_graves": ["Raros."],
+      "contraindicacoes": ["Uso concomitante com IMAOs."],
+      "interacoes": "Seguro inclusive para idosos.",
+      "faq": [
+        { "pergunta": "Tomar de manhã ou à noite?", "resposta": "Se der sono, tome à noite. Se der insônia, tome de manhã." }
+      ]
+    },
+    {
+      "id": "escitalopram",
+      "nome": "Escitalopram (Lexapro)",
+      "categoria": "sistema-nervoso",
+      "introducao": "Antidepressivo moderno de alta precisão para ansiedade e fobia social.",
+      "indicacoes": ["Ansiedade generalizada.", "Fobia social e depressão."],
+      "como_tomar": "1 vez ao dia.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "10mg a 20mg ao dia" },
+        { "faixa": "Idosos", "dosagem": "5mg a 10mg ao dia" }
+      ],
+      "efeitos_comuns": ["Suor excessivo.", "Enjoo inicial."],
+      "efeitos_graves": ["Raros."],
+      "contraindicacoes": ["Problemas graves de ritmo cardíaco."],
+      "interacoes": "Muito bem tolerado.",
+      "faq": [
+        { "pergunta": "É bom para ansiedade?", "resposta": "É considerado um dos mais eficazes para ansiedade." }
+      ]
+    },
+    {
+      "id": "amitriptilina",
+      "nome": "Amitriptilina",
+      "categoria": "sistema-nervoso",
+      "introducao": "Remédio clássico para depressão, dor de cabeça crônica e fibromialgia.",
+      "indicacoes": ["Prevenção de enxaqueca.", "Dor crônica e insônia."],
+      "como_tomar": "Tomar sempre à noite.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos (dor/enxaqueca)", "dosagem": "10mg a 25mg à noite" },
+        { "faixa": "Adultos (depressão)", "dosagem": "75mg a 150mg à noite" }
+      ],
+      "efeitos_comuns": ["Boca seca intensa.", "Sonolência forte."],
+      "efeitos_graves": ["Retenção de urina."],
+      "contraindicacoes": ["Glaucoma e infarto recente."],
+      "interacoes": "Potencializa a sonolência.",
+      "faq": [
+        { "pergunta": "Por que tomar à noite?", "resposta": "Causa sonolência forte, ajudando a dormir bem." }
+      ]
+    },
+    {
+      "id": "levotiroxina",
+      "nome": "Levotiroxina Sódica (Puran T4)",
+      "categoria": "hormonios",
+      "introducao": "Hormônio sintético da tireoide para hipotireoidismo.",
+      "indicacoes": ["Hipotireoidismo (tireoide preguiçosa)."],
+      "como_tomar": "Em jejum rigoroso, 30 min antes do café da manhã apenas com água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "Conforme exame de sangue TSH" },
+        { "faixa": "Crianças", "dosagem": "Ajuste pelo endocrinologista" }
+      ],
+      "efeitos_comuns": ["Sem efeitos se a dose estiver correta."],
+      "efeitos_graves": ["Palpitação se a dose estiver alta."],
+      "contraindicacoes": ["Infarto recente."],
+      "interacoes": "Não tomar com leite, café ou vitaminas junto.",
+      "faq": [
+        { "pergunta": "Por que só com água em jejum?", "resposta": "Café ou leite impedem o remédio de ser absorvido pelo corpo." }
+      ]
+    }
+  ]
+};
