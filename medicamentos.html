@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicamentos - Explica a Bula</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--secondary)"><path d="M10.5 20.5 7 20l-1-3.5 3.5-3.5 3.5 3.5-3.5 3.5z"/><path d="M12.5 14 17 9.5a2.83 2.83 0 0 0-4-4L8.5 10"/><path d="m14 6 4 4"/></svg>
+                Explica <span>Bula</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="medicamentos.html" class="active">Medicamentos</a>
+                <a href="sintomas.html">Sintomas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 40px 20px;">
+        <h1 style="margin-bottom: 24px; color: var(--primary-hover);">Todos os Medicamentos</h1>
+        <div class="search-bar" style="margin: 0 0 40px 0; max-width: 100%;">
+            <input type="text" id="filterInput" placeholder="Filtrar por nome ou categoria...">
+        </div>
+        
+        <div id="medicamentosList">
+            <!-- Renderizado via JS -->
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintomas - Explica a Bula</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--secondary)"><path d="M10.5 20.5 7 20l-1-3.5 3.5-3.5 3.5 3.5-3.5 3.5z"/><path d="M12.5 14 17 9.5a2.83 2.83 0 0 0-4-4L8.5 10"/><path d="m14 6 4 4"/></svg>
+                Explica <span>Bula</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="medicamentos.html">Medicamentos</a>
+                <a href="sintomas.html" class="active">Sintomas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 40px 20px; display: grid; grid-template-columns: 300px 1fr; gap: 40px;" id="sintomasLayout">
+        <aside>
+            <h2 style="margin-bottom: 24px;">Sintomas</h2>
+            <ul id="sintomasList" style="display: flex; flex-direction: column; gap: 8px;">
+                <!-- Renderizado via JS -->
+            </ul>
+        </aside>
+        
+        <section id="sintomaResult">
+            <div style="background: white; padding: 40px; border-radius: 12px; text-align: center; border: 1px dashed var(--border); color: var(--text-muted);">
+                Selecione um sintoma ao lado para ver os medicamentos indicados.
+            </div>
+        </section>
+    </main>
+    
+    <!-- Para mobile -->
+    <style>
+        @media (max-width: 768px) {
+            #sintomasLayout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="main.js"></script>
+</body>
+</html>

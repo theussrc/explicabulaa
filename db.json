@@ -1,0 +1,963 @@
+{
+  "categorias": [
+    { "id": "dor-febre", "nome": "Analgésicos, Anti-inflamatórios e Antitérmicos" },
+    { "id": "relaxantes", "nome": "Relaxantes Musculares e Antiespasmódicos" },
+    { "id": "gastrointestinais", "nome": "Gastrointestinais (Estômago, Intestino, Enjoo)" },
+    { "id": "antialergicos", "nome": "Antialérgicos e Corticoides" },
+    { "id": "antibioticos", "nome": "Antibióticos e Antiparasitários" },
+    { "id": "cardiovascular", "nome": "Cardiovascular, Diabetes e Colesterol" },
+    { "id": "sistema-nervoso", "nome": "Sistema Nervoso e Psiquiátricos" },
+    { "id": "hormonios", "nome": "Hormônios e Outros" }
+  ],
+  "sintomas": [
+    { "id": "dor-de-cabeca", "nome": "Dor de Cabeça", "medicamentos": ["dipirona-novalgina", "paracetamol-tylenol", "ibuprofeno-alivium", "dorflex", "neosaldina"] },
+    { "id": "febre", "nome": "Febre", "medicamentos": ["dipirona-novalgina", "paracetamol-tylenol", "ibuprofeno-alivium"] },
+    { "id": "enjoo", "nome": "Enjoo e Náuseas", "medicamentos": ["domperidona-motilium", "metoclopramida-plasil", "vonau-flash"] },
+    { "id": "azia", "nome": "Azia e Queimação", "medicamentos": ["omeprazol-losec", "pantoprazol", "esomeprazol"] },
+    { "id": "dor-muscular", "nome": "Dor Muscular", "medicamentos": ["ibuprofeno-alivium", "diclofenaco", "nimesulida", "torsilax", "meloxicam"] },
+    { "id": "dor-de-garganta", "nome": "Dor de Garganta", "medicamentos": ["ibuprofeno-alivium", "amoxicilina", "azitromicina"] },
+    { "id": "alergia", "nome": "Alergia e Rinite", "medicamentos": ["loratadina", "desloratadina", "fexofenadina"] },
+    { "id": "infeccao", "nome": "Infecção Bacteriana", "medicamentos": ["amoxicilina", "amoxicilina-clavulanato", "azitromicina", "cefalexina", "ciprofloxacino"] },
+    { "id": "gases", "nome": "Gases e Barriga Inchada", "medicamentos": ["simeticona"] },
+    { "id": "espasmo", "nome": "Cólica e Espasmo Abdominal", "medicamentos": ["buscopan", "buscopan-composto"] },
+    { "id": "pressao-alta", "nome": "Pressão Alta", "medicamentos": ["losartana", "atenolol", "enalapril", "hidroclorotiazida"] },
+    { "id": "ansiedade", "nome": "Ansiedade", "medicamentos": ["clonazepam", "alprazolam", "diazepam"] },
+    { "id": "depressao", "nome": "Depressão e Tristeza Profunda", "medicamentos": ["fluoxetina", "sertralina", "escitalopram", "amitriptilina"] },
+    { "id": "tireoide", "nome": "Tireoide (Hipotireoidismo)", "medicamentos": ["levotiroxina"] },
+    { "id": "diabetes", "nome": "Diabetes (Glicemia Alta)", "medicamentos": ["metformina"] },
+    { "id": "colesterol", "nome": "Colesterol Alto", "medicamentos": ["sinvastatina"] },
+    { "id": "verminose", "nome": "Verminose e Parasitas", "medicamentos": ["albendazol", "ivermectina", "secnidazol", "nitazoxanida"] },
+    { "id": "insonia", "nome": "Insônia e Dificuldade para Dormir", "medicamentos": ["clonazepam", "diazepam"] },
+    { "id": "inflamacao", "nome": "Inflamação e Inchaço", "medicamentos": ["prednisona", "dexametasona", "ibuprofeno-alivium", "nimesulida"] },
+    { "id": "dor-articular", "nome": "Dor nas Articulações", "medicamentos": ["meloxicam", "diclofenaco", "cetoprofeno"] }
+  ],
+  "medicamentos": [
+    {
+      "id": "dipirona-novalgina",
+      "nome": "Dipirona Monoidratada (Novalgina)",
+      "categoria": "dor-febre",
+      "introducao": "Neste artigo, explicamos de forma simples tudo o que você precisa saber sobre a Dipirona Monoidratada antes de usar. Ela é um dos medicamentos mais populares para aliviar dores e baixar a febre, podendo ser comprada sem receita médica na maioria das farmácias.",
+      "indicacoes": ["Dor (desde dores leves de cabeça até dores musculares mais fortes).", "Febre (ajuda a baixar a temperatura corporal de forma rápida)."],
+      "como_tomar": "A Dipirona pode ser encontrada em diversas formas, como comprimidos, gotas ou xaropes. A dosagem varia de acordo com a idade e o peso.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e maiores de 15 anos", "dosagem": "20 a 40 gotas, até 4 vezes ao dia" },
+        { "faixa": "Crianças (acima de 3 meses)", "dosagem": "Varia conforme o peso (geralmente 1 gota por kg, com limite máximo por dose)" }
+      ],
+      "efeitos_comuns": ["Queda da pressão arterial (especialmente se tomada em doses altas, podendo causar tontura).", "Desconforto gástrico leve."],
+      "efeitos_graves": ["Reações alérgicas graves (inchaço no rosto, boca ou garganta, falta de ar, coceira intensa).", "Agranulocitose (uma queda rara e perigosa no número de células de defesa do sangue, que pode causar infecções graves e febre alta repentina)."],
+      "contraindicacoes": ["Tiver alergia à dipirona, a outros analgésicos semelhantes (como pirazolonas) ou a qualquer componente da fórmula.", "Estiver grávida (especialmente nos primeiros 3 meses e nos últimos 3 meses) ou amamentando, sem expressa orientação médica.", "Tiver problemas na medula óssea ou doenças relacionadas à produção de células do sangue.", "Sofrer de porfiria hepática aguda (uma doença metabólica rara) ou deficiência congênita de G6PD.", "Crianças menores de 3 meses ou pesando menos de 5 kg."],
+      "interacoes": "Evite misturar com álcool, pois pode potencializar os efeitos do álcool e causar reações adversas.",
+      "faq": [
+        { "pergunta": "Dipirona dá sono?", "resposta": "Não. A dipirona em si não tem propriedades que causam sono, mas a queda de pressão arterial que ela pode provocar ou o próprio alívio da febre e dor podem trazer uma sensação de cansaço ou relaxamento." },
+        { "pergunta": "Quanto tempo a Dipirona demora para fazer efeito?", "resposta": "Geralmente, o alívio da dor e da febre começa a ser sentido entre 30 a 60 minutos após tomar o medicamento." },
+        { "pergunta": "Posso tomar Dipirona de barriga vazia?", "resposta": "Sim, ela pode ser tomada com ou sem alimentos, acompanhada de um pouco de água. No entanto, se você costuma ter irritação no estômago, tomá-la após as refeições pode ajudar." }
+      ]
+    },
+    {
+      "id": "paracetamol-tylenol",
+      "nome": "Paracetamol (Tylenol)",
+      "categoria": "dor-febre",
+      "introducao": "Neste artigo, explicamos tudo sobre o Paracetamol, um medicamento muito utilizado para alívio rápido de dores e febre. É considerado um dos analgésicos mais seguros quando usado na dose correta.",
+      "indicacoes": ["Dores leves a moderadas (dor de cabeça, dor de dente, dor muscular).", "Redução da febre."],
+      "como_tomar": "O Paracetamol é encontrado em gotas, xarope e comprimidos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e maiores de 12 anos", "dosagem": "500mg a 750mg, 3 a 4 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "1 gota por kg de peso (para apresentação 200mg/mL)" }
+      ],
+      "efeitos_comuns": ["Raramente causa efeitos colaterais na dose recomendada.", "Em alguns casos, leves alterações gastrointestinais."],
+      "efeitos_graves": ["Toxicidade no fígado (quando tomado em doses acima do recomendado).", "Reações alérgicas na pele (raras)."],
+      "contraindicacoes": ["Pessoas com problemas graves no fígado ou doenças hepáticas.", "Alérgicos ao paracetamol."],
+      "interacoes": "O uso com álcool aumenta significativamente o risco de danos graves ao fígado.",
+      "faq": [
+        { "pergunta": "Qual a diferença entre Paracetamol e Dipirona?", "resposta": "Ambos servem para dor e febre, mas a Dipirona costuma ser um pouco mais forte para febre e dores intensas, enquanto o Paracetamol é mais seguro para quem tem problemas de estômago ou alergia à dipirona." },
+        { "pergunta": "Grávida pode tomar Paracetamol?", "resposta": "Geralmente sim, o paracetamol é considerado o analgésico de escolha durante a gravidez, mas o uso deve ser feito sob orientação médica e com moderação." }
+      ]
+    },
+    {
+      "id": "ibuprofeno-alivium",
+      "nome": "Ibuprofeno (Alivium)",
+      "categoria": "dor-febre",
+      "introducao": "O Ibuprofeno é um anti-inflamatório muito usado para aliviar dores, inflamações e febre. Disponível sem receita em muitas apresentações, é importante usá-lo com cuidado para proteger o estômago.",
+      "indicacoes": ["Dor de cabeça, dor de dente e dor muscular.", "Febre.", "Inflamações (artrite, tendinite).", "Cólica menstrual."],
+      "como_tomar": "Disponível em comprimidos, cápsulas e suspensão oral. Sempre tome com alimentos ou leite para proteger o estômago.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "200mg a 400mg, 3 a 4 vezes ao dia (máx. 1.200mg/dia sem receita)" },
+        { "faixa": "Crianças", "dosagem": "5 a 10mg por kg de peso, a cada 6 a 8 horas" }
+      ],
+      "efeitos_comuns": ["Azia e desconforto estomacal.", "Náuseas.", "Dor de cabeça."],
+      "efeitos_graves": ["Úlcera gástrica ou sangramento no estômago.", "Problemas renais com uso prolongado.", "Reações alérgicas graves."],
+      "contraindicacoes": ["Pessoas com úlcera gástrica ativa.", "Gestantes no último trimestre.", "Pessoas com insuficiência renal ou hepática grave.", "Alérgicos à Aspirina ou outros AINEs."],
+      "interacoes": "Não use junto com outros anti-inflamatórios. Evite o álcool. Informe seu médico se tomar anticoagulantes.",
+      "faq": [
+        { "pergunta": "Ibuprofeno dói o estômago?", "resposta": "Sim, pode irritar a mucosa gástrica. Por isso, tome sempre junto com alimentos e nunca de barriga vazia." },
+        { "pergunta": "Posso tomar Ibuprofeno e Paracetamol juntos?", "resposta": "Sim, em geral podem ser usados juntos pois têm mecanismos diferentes, mas consulte um médico ou farmacêutico antes." }
+      ]
+    },
+    {
+      "id": "nimesulida",
+      "nome": "Nimesulida (Scaflam)",
+      "categoria": "dor-febre",
+      "introducao": "A Nimesulida é um anti-inflamatório potente usado para dores moderadas a intensas e processos inflamatórios. Exige atenção especial ao fígado e não deve ser usada por longos períodos.",
+      "indicacoes": ["Dores musculares e articulares.", "Inflamações em geral.", "Febre.", "Dor de dente."],
+      "como_tomar": "Disponível em comprimidos, sachê (granulado para dissolver) e suspensão. Tome sempre após as refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e maiores de 12 anos", "dosagem": "100mg, 2 vezes ao dia, após as refeições" },
+        { "faixa": "Crianças menores de 12 anos", "dosagem": "Contraindicado" }
+      ],
+      "efeitos_comuns": ["Náuseas e azia.", "Diarreia.", "Tontura."],
+      "efeitos_graves": ["Dano ao fígado (hepatotoxicidade) — principal risco.", "Sangramento gastrointestinal."],
+      "contraindicacoes": ["Crianças menores de 12 anos.", "Gestantes e lactantes.", "Pessoas com problemas hepáticos.", "Histórico de úlcera péptica."],
+      "interacoes": "Evite álcool rigorosamente, pois potencializa o risco de dano ao fígado.",
+      "faq": [
+        { "pergunta": "Nimesulida faz mal ao fígado?", "resposta": "Pode sim, especialmente em uso prolongado ou em pessoas que já têm algum problema hepático. Nunca tome por mais tempo do que o indicado pelo médico." },
+        { "pergunta": "Posso tomar Nimesulida todos os dias?", "resposta": "Não é recomendado. O uso deve ser o mais curto possível e sempre com orientação médica." }
+      ]
+    },
+    {
+      "id": "cetoprofeno",
+      "nome": "Cetoprofeno (Profenid)",
+      "categoria": "dor-febre",
+      "introducao": "O Cetoprofeno é um anti-inflamatório não esteroidal (AINE) usado para tratar dores e inflamações moderadas a intensas, como as causadas por artrite ou lesões musculares.",
+      "indicacoes": ["Artrite reumatoide e osteoartrite.", "Dores musculares e após cirurgias.", "Cólica menstrual.", "Dor de dente e dor de ouvido."],
+      "como_tomar": "Disponível em comprimidos, gel para uso tópico e injeção (hospitalar). Tome os comprimidos com alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "50mg a 100mg, 2 a 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Não recomendado para menores de 15 anos" }
+      ],
+      "efeitos_comuns": ["Desconforto gástrico.", "Náuseas.", "Sonolência."],
+      "efeitos_graves": ["Úlcera gástrica.", "Reações alérgicas cutâneas (especialmente na forma gel com exposição solar)."],
+      "contraindicacoes": ["Úlcera péptica ativa.", "Gestantes.", "Alérgicos a AINEs.", "Insuficiência renal ou hepática grave."],
+      "interacoes": "Não use o gel nas mucosas ou em áreas expostas ao sol. Evite associar com outros anti-inflamatórios.",
+      "faq": [
+        { "pergunta": "O gel de Cetoprofeno pode ser usado com exposição ao sol?", "resposta": "Não. O gel de cetoprofeno pode causar reações graves na pele quando exposto ao sol. Proteja a área tratada." },
+        { "pergunta": "Cetoprofeno é mais forte que Ibuprofeno?", "resposta": "Sim, em geral o cetoprofeno tem ação anti-inflamatória mais potente, por isso é usado para dores mais intensas." }
+      ]
+    },
+    {
+      "id": "diclofenaco",
+      "nome": "Diclofenaco Sódico (Cataflam)",
+      "categoria": "dor-febre",
+      "introducao": "O Diclofenaco é um anti-inflamatório amplamente utilizado para dores agudas e crônicas. É encontrado em diversas formas: comprimido, gel, supositório e injeção.",
+      "indicacoes": ["Dores musculares e articulares.", "Inflamações após traumas e cirurgias.", "Cólica menstrual.", "Enxaqueca."],
+      "como_tomar": "Comprimidos devem ser tomados com água, de preferência com alimentos. O gel é aplicado diretamente na área dolorida.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "50mg, 2 a 3 vezes ao dia (máx. 150mg/dia)" },
+        { "faixa": "Crianças", "dosagem": "Não recomendado para menores de 14 anos" }
+      ],
+      "efeitos_comuns": ["Dor de estômago.", "Náusea.", "Dor de cabeça."],
+      "efeitos_graves": ["Sangramento gastrointestinal.", "Elevação da pressão arterial.", "Danos renais."],
+      "contraindicacoes": ["Gestantes (especialmente no 3º trimestre).", "Úlcera ativa.", "Insuficiência cardíaca grave.", "Alérgicos a AINEs."],
+      "interacoes": "Pode reduzir o efeito de medicamentos para pressão arterial. Evite associar com outros anti-inflamatórios.",
+      "faq": [
+        { "pergunta": "Diclofenaco e Cataflam são a mesma coisa?", "resposta": "Sim, Cataflam é o nome comercial de um dos tipos de diclofenaco (diclofenaco de potássio), que tem absorção um pouco mais rápida." },
+        { "pergunta": "Posso usar o gel de Diclofenaco todos os dias?", "resposta": "O gel pode ser usado por períodos curtos (até 2 semanas). Para uso mais longo, consulte um médico." }
+      ]
+    },
+    {
+      "id": "meloxicam",
+      "nome": "Meloxicam",
+      "categoria": "dor-febre",
+      "introducao": "O Meloxicam é um anti-inflamatório da classe dos inibidores seletivos de COX-2, considerado um pouco mais gentil com o estômago em comparação a outros AINEs. Muito usado para artrite e dores articulares.",
+      "indicacoes": ["Osteoartrite (desgaste nas articulações).", "Artrite reumatoide.", "Dores nas costas.", "Outros processos inflamatórios crônicos."],
+      "como_tomar": "Disponível em comprimidos e injeção. Tome com um copo cheio de água, de preferência com alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "7,5mg a 15mg, 1 vez ao dia" },
+        { "faixa": "Crianças", "dosagem": "Apenas sob prescrição pediátrica" }
+      ],
+      "efeitos_comuns": ["Desconforto gástrico leve.", "Diarreia.", "Tontura."],
+      "efeitos_graves": ["Sangramento gastrointestinal.", "Retenção de líquidos.", "Problemas cardiovasculares com uso longo."],
+      "contraindicacoes": ["Gestantes.", "Pessoas com úlcera ativa.", "Alérgicos a AINEs.", "Insuficiência renal grave."],
+      "interacoes": "Evite usar com outros AINEs ou anticoagulantes sem orientação médica.",
+      "faq": [
+        { "pergunta": "Meloxicam dói o estômago?", "resposta": "Menos do que outros anti-inflamatórios, mas pode causar desconforto. Sempre tome com alimentos." },
+        { "pergunta": "Meloxicam pode ser tomado uma vez ao dia?", "resposta": "Sim, essa é a posologia padrão — uma dose diária, o que facilita a adesão ao tratamento." }
+      ]
+    },
+    {
+      "id": "aas-aspirina",
+      "nome": "Ácido Acetilsalicílico (Aspirina / AAS)",
+      "categoria": "dor-febre",
+      "introducao": "A Aspirina é um dos medicamentos mais antigos do mundo. Além de tratar dor e febre, em doses baixas é amplamente usada para prevenir doenças cardiovasculares como infartos e AVC.",
+      "indicacoes": ["Dores leves e febre.", "Prevenção de infarto e AVC (em doses baixas, com prescrição médica).", "Doenças inflamatórias como artrite."],
+      "como_tomar": "Tome com bastante água e, de preferência, com alimentos. A versão infantil (Baby Aspirina) é usada para prevenção cardiovascular.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos (dor/febre)", "dosagem": "500mg a 1g, a cada 4 a 6 horas" },
+        { "faixa": "Prevenção cardiovascular", "dosagem": "100mg, 1 vez ao dia (apenas com prescrição)" }
+      ],
+      "efeitos_comuns": ["Irritação gástrica.", "Náusea.", "Zumbido no ouvido (em doses altas)."],
+      "efeitos_graves": ["Sangramento (pois inibe a coagulação do sangue).", "Síndrome de Reye em crianças (risco grave)."],
+      "contraindicacoes": ["Crianças e adolescentes com menos de 18 anos (risco de Síndrome de Reye).", "Pessoas com úlcera ativa.", "Gestantes.", "Pessoas com distúrbios de coagulação."],
+      "interacoes": "Potencializa o efeito de anticoagulantes como a Varfarina. Evite o álcool.",
+      "faq": [
+        { "pergunta": "Por que não devo dar Aspirina para crianças?", "resposta": "Em crianças com infecções virais (como gripe ou varicela), a Aspirina pode causar a Síndrome de Reye, uma doença rara mas gravíssima que afeta o cérebro e o fígado." },
+        { "pergunta": "Preciso de receita para tomar AAS 100mg?", "resposta": "Para uso como prevenção cardiovascular, sim. Nunca tome o AAS diariamente sem orientação do seu médico." }
+      ]
+    },
+    {
+      "id": "dorflex",
+      "nome": "Dorflex",
+      "categoria": "relaxantes",
+      "introducao": "O Dorflex combina três substâncias (Dipirona, Orfenadrina e Cafeína) para tratar dores de cabeça tensionais e dores musculares com eficácia. É um dos analgésicos mais vendidos no Brasil.",
+      "indicacoes": ["Dor de cabeça tensional (aquela causada por estresse e tensão no pescoço e ombros).", "Dores musculares leves.", "Contraturas musculares."],
+      "como_tomar": "Disponível em comprimidos. Tome com água e pode ser com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "1 a 2 comprimidos, até 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Não recomendado para menores de 15 anos" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Tontura.", "Visão turva temporária."],
+      "efeitos_graves": ["Reações alérgicas à dipirona.", "Dificuldade para urinar."],
+      "contraindicacoes": ["Glaucoma (pressão alta nos olhos).", "Miastenia grave.", "Dificuldade para urinar (hiperplasia prostática).", "Gestantes."],
+      "interacoes": "A cafeína na fórmula pode causar agitação se combinada com outras fontes de cafeína (café, energéticos).",
+      "faq": [
+        { "pergunta": "Dorflex dá sono?", "resposta": "A orfenadrina pode causar leve sedação em algumas pessoas, mas a cafeína na fórmula tende a contrabalancear esse efeito." },
+        { "pergunta": "Dorflex é bom para dor de cabeça forte?", "resposta": "Sim, especialmente para dores tensionais. Para enxaquecas muito intensas, converse com um médico sobre opções específicas." }
+      ]
+    },
+    {
+      "id": "torsilax",
+      "nome": "Torsilax",
+      "categoria": "relaxantes",
+      "introducao": "O Torsilax é uma combinação de quatro substâncias (Diclofenaco, Carisoprodol, Paracetamol e Cafeína) que age ao mesmo tempo como relaxante muscular, anti-inflamatório e analgésico. Exige receita médica.",
+      "indicacoes": ["Contraturas musculares intensas.", "Lombalgias (dores nas costas).", "Dores musculares por esforço excessivo."],
+      "como_tomar": "Comprimidos. Tome com água e alimentos. Não dirija ou opere máquinas após o uso.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "1 comprimido, 2 a 3 vezes ao dia, conforme orientação médica" },
+        { "faixa": "Crianças", "dosagem": "Contraindicado" }
+      ],
+      "efeitos_comuns": ["Sonolência intensa.", "Tontura.", "Boca seca."],
+      "efeitos_graves": ["Dependência física (pelo carisoprodol).", "Problemas hepáticos."],
+      "contraindicacoes": ["Gestantes e lactantes.", "Histórico de dependência química.", "Insuficiência hepática."],
+      "interacoes": "Álcool e outros depressores do sistema nervoso central potencializam a sonolência. Evite dirigir.",
+      "faq": [
+        { "pergunta": "Torsilax causa dependência?", "resposta": "Pode causar dependência pelo carisoprodol. Por isso exige receita médica e não deve ser usado por longos períodos sem controle médico." },
+        { "pergunta": "Torsilax dá sono?", "resposta": "Sim, a sonolência é um dos efeitos mais comuns. Evite dirigir e realizar atividades de risco após tomar." }
+      ]
+    },
+    {
+      "id": "neosaldina",
+      "nome": "Neosaldina",
+      "categoria": "relaxantes",
+      "introducao": "A Neosaldina combina Dipirona, Isometepteno e Cafeína para tratar especialmente dores de cabeça e enxaquecas. É um medicamento popular e de venda sem receita.",
+      "indicacoes": ["Dor de cabeça tensional.", "Enxaqueca leve a moderada.", "Dores em geral."],
+      "como_tomar": "Comprimidos ou cápsulas. Tome com água, com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "1 a 2 comprimidos por dose, até 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Não recomendado para menores de 15 anos" }
+      ],
+      "efeitos_comuns": ["Agitação ou nervosismo (pela cafeína).", "Insônia se tomada à noite.", "Palpitações leves."],
+      "efeitos_graves": ["Reações alérgicas à dipirona.", "Elevação da pressão arterial."],
+      "contraindicacoes": ["Hipertensão grave.", "Doenças cardiovasculares sérias.", "Glaucoma.", "Gestantes."],
+      "interacoes": "Evite combinação com outros estimulantes (café, chá-mate, energéticos) pela cafeína.",
+      "faq": [
+        { "pergunta": "Neosaldina é bom para enxaqueca?", "resposta": "Funciona bem para enxaquecas leves a moderadas. Para crises fortes e frequentes, consulte um neurologista." },
+        { "pergunta": "Posso tomar Neosaldina à noite?", "resposta": "A cafeína na fórmula pode causar insônia. Prefira tomar cedo e evite antes de dormir." }
+      ]
+    },
+    {
+      "id": "buscopan",
+      "nome": "Buscopan (Butilbrometo de Escopolamina)",
+      "categoria": "relaxantes",
+      "introducao": "O Buscopan é um antiespasmódico muito eficaz para aliviar cólicas e espasmos do trato digestivo e urinário. Age diretamente na musculatura lisa, relaxando-a rapidamente.",
+      "indicacoes": ["Cólica intestinal e gástrica.", "Cólica urinária (pedra nos rins).", "Cólica menstrual (biliar)."],
+      "como_tomar": "Comprimidos ou gotas. Pode ser tomado com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "10mg a 20mg, 3 a 5 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Conforme peso, sob orientação pediátrica" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Taquicardia (coração acelerado).", "Visão turva leve."],
+      "efeitos_graves": ["Retenção urinária (em pessoas com predisposição).", "Glaucoma agudo."],
+      "contraindicacoes": ["Glaucoma.", "Miastenia grave.", "Dificuldade para urinar.", "Megacólon."],
+      "interacoes": "Pode potencializar o efeito de outros medicamentos com ação anticolinérgica.",
+      "faq": [
+        { "pergunta": "Buscopan simples ou Buscopan composto?", "resposta": "O simples contém apenas o antiespasmódico, ideal para cólicas. O composto tem Dipirona também, servindo para cólicas com dor mais intensa." },
+        { "pergunta": "Buscopan ajuda na cólica menstrual?", "resposta": "Sim, alivia a cólica, mas não age na inflamação. Para cólicas menstruais com inflamação, anti-inflamatórios como o Ibuprofeno podem ser mais indicados." }
+      ]
+    },
+    {
+      "id": "buscopan-composto",
+      "nome": "Buscopan Composto (Escopolamina + Dipirona)",
+      "categoria": "relaxantes",
+      "introducao": "O Buscopan Composto combina o antiespasmódico Butilbrometo de Escopolamina com a Dipirona, unindo o alívio de cólicas com o efeito analgésico para dores mais intensas.",
+      "indicacoes": ["Cólicas intestinais e gástricas com dor.", "Cólica urinária.", "Cólica biliar.", "Espasmos com dor intensa."],
+      "como_tomar": "Comprimidos ou gotas. Tome com água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "1 a 2 comprimidos, 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "Apenas sob orientação médica" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Queda de pressão.", "Taquicardia."],
+      "efeitos_graves": ["Reações alérgicas à dipirona.", "Retenção urinária."],
+      "contraindicacoes": ["Glaucoma.", "Gravidez.", "Alérgicos à dipirona."],
+      "interacoes": "As mesmas precauções do Buscopan simples e da Dipirona se aplicam.",
+      "faq": [
+        { "pergunta": "Qual a diferença entre Buscopan e Buscopan Composto?", "resposta": "O Buscopan simples só relaxa o espasmo. O Composto tem Dipirona, que também alivia a dor. Para cólicas fortes, o Composto tende a ser mais eficaz." }
+      ]
+    },
+    {
+      "id": "omeprazol-losec",
+      "nome": "Omeprazol (Losec)",
+      "categoria": "gastrointestinais",
+      "introducao": "O Omeprazol é um dos medicamentos mais conhecidos para proteger o estômago e tratar problemas de excesso de acidez. Descubra aqui a forma correta de utilizá-lo.",
+      "indicacoes": ["Úlceras no estômago ou intestino.", "Refluxo gastroesofágico (quando o ácido do estômago volta para o esôfago, causando azia e queimação).", "Prevenção de danos ao estômago causados por outros remédios (como anti-inflamatórios)."],
+      "como_tomar": "O Omeprazol deve ser tomado em forma de cápsulas inteiras, preferencialmente pela manhã, em jejum, de 15 a 30 minutos antes do café da manhã.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "20mg a 40mg por dia, dependendo da indicação médica" },
+        { "faixa": "Crianças", "dosagem": "Apenas sob estrita orientação de um pediatra" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Diarreia, dor na barriga ou prisão de ventre.", "Enjoo ou vômito."],
+      "efeitos_graves": ["O uso prolongado (anos) pode causar deficiência de vitamina B12 ou problemas ósseos.", "Reações alérgicas graves (raras)."],
+      "contraindicacoes": ["Pessoas com alergia ao omeprazol ou outros inibidores de bomba de prótons.", "Se você tem problemas graves no fígado, o médico precisa ajustar a dose."],
+      "interacoes": "Pode interferir na absorção de outros medicamentos, portanto avise seu médico se tomar outras medicações regularmente.",
+      "faq": [
+        { "pergunta": "Por que o Omeprazol deve ser tomado em jejum?", "resposta": "Tomá-jejum permite que o medicamento chegue ao intestino e seja absorvido antes que as células do estômago comecem a produzir muito ácido (o que acontece quando você come)." },
+        { "pergunta": "Posso abrir a cápsula do Omeprazol?", "resposta": "Não. A cápsula protege o medicamento do ácido do estômago para que ele seja absorvido no intestino. Abrir a cápsula faz com que o remédio perca sua eficácia." }
+      ]
+    },
+    {
+      "id": "pantoprazol",
+      "nome": "Pantoprazol",
+      "categoria": "gastrointestinais",
+      "introducao": "O Pantoprazol é um inibidor de bomba de prótons usado para tratar gastrite, úlceras e refluxo. Muito similar ao Omeprazol, é amplamente prescrito e bem tolerado.",
+      "indicacoes": ["Refluxo gastroesofágico.", "Gastrite erosiva.", "Úlcera gástrica e duodenal.", "Síndrome de Zollinger-Ellison (produção excessiva de ácido)."],
+      "como_tomar": "Comprimido inteiro, em jejum, 30 minutos antes da primeira refeição do dia.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "20mg a 40mg, 1 vez ao dia" },
+        { "faixa": "Crianças", "dosagem": "Apenas sob orientação pediátrica" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Diarreia.", "Gases."],
+      "efeitos_graves": ["Deficiência de magnésio com uso prolongado.", "Nefrite intersticial (rara)."],
+      "contraindicacoes": ["Alérgicos ao pantoprazol ou outros inibidores de bomba de prótons."],
+      "interacoes": "Pode interferir na absorção de alguns antibióticos e antivirais. Informe seu médico sobre todos os medicamentos que usa.",
+      "faq": [
+        { "pergunta": "Pantoprazol e Omeprazol são a mesma coisa?", "resposta": "São muito parecidos e pertencem à mesma classe, mas o pantoprazol tende a ter menos interações medicamentosas, sendo preferido em alguns tratamentos." },
+        { "pergunta": "Posso tomar Pantoprazol por muito tempo?", "resposta": "O uso prolongado deve ser avaliado pelo médico. O uso por anos pode causar deficiência de magnésio e vitamina B12." }
+      ]
+    },
+    {
+      "id": "esomeprazol",
+      "nome": "Esomeprazol",
+      "categoria": "gastrointestinais",
+      "introducao": "O Esomeprazol é um inibidor de bomba de prótons de nova geração, considerado mais potente e duradouro que o Omeprazol para controle da acidez gástrica.",
+      "indicacoes": ["Doença do refluxo gastroesofágico (DRGE).", "Erosões esofágicas.", "Úlcera gástrica.", "Erradicação do H. pylori (com antibióticos)."],
+      "como_tomar": "Cápsulas inteiras, engolidas com água, idealmente 1 hora antes das refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "20mg a 40mg, 1 vez ao dia" },
+        { "faixa": "Crianças (acima de 1 ano)", "dosagem": "Conforme peso, sob orientação médica" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Náusea.", "Dor abdominal."],
+      "efeitos_graves": ["Colite microscópica.", "Fraturas ósseas com uso prolongado."],
+      "contraindicacoes": ["Alérgicos ao esomeprazol ou similares.", "Não usar com nelfinavir (antiviral para HIV)."],
+      "interacoes": "Pode reduzir a eficácia do clopidogrel (medicamento para o coração). Avise seu médico.",
+      "faq": [
+        { "pergunta": "Esomeprazol é mais forte que o Omeprazol?", "resposta": "Sim, o esomeprazol em geral oferece controle de acidez mais prolongado e estável, sendo indicado para casos de refluxo mais intensos." }
+      ]
+    },
+    {
+      "id": "simeticona",
+      "nome": "Simeticona (Luftal)",
+      "categoria": "gastrointestinais",
+      "introducao": "A Simeticona é um medicamento antiespumante usado para aliviar os desconfortos causados pelo excesso de gases no sistema digestivo. É segura, não é absorvida pelo organismo e pode ser usada por bebês.",
+      "indicacoes": ["Flatulência (gases).", "Distensão abdominal (barriga inchada).", "Aerofagia (engolir ar)."],
+      "como_tomar": "Gotas, comprimidos mastigáveis ou cápsulas. Pode ser tomada com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "40mg a 125mg, após as refeições e ao deitar" },
+        { "faixa": "Crianças e bebês", "dosagem": "Conforme peso (forma em gotas, sob orientação pediátrica)" }
+      ],
+      "efeitos_comuns": ["Praticamente sem efeitos colaterais, pois não é absorvida."],
+      "efeitos_graves": ["Não há relatos de efeitos graves com o uso correto."],
+      "contraindicacoes": ["Alérgicos à simeticona."],
+      "interacoes": "Não há interações medicamentosas relevantes conhecidas.",
+      "faq": [
+        { "pergunta": "Simeticona pode ser dada para bebês?", "resposta": "Sim, a Simeticona em gotas é frequentemente usada para aliviar gases em bebês com cólicas, sendo considerada segura. Consulte o pediatra." },
+        { "pergunta": "Simeticona vicia?", "resposta": "Não. A simeticona não é absorvida pelo intestino e não causa dependência." }
+      ]
+    },
+    {
+      "id": "domperidona-motilium",
+      "nome": "Domperidona (Motilium)",
+      "categoria": "gastrointestinais",
+      "introducao": "A Domperidona é um medicamento que acelera o esvaziamento do estômago e combate náuseas e vômitos. É usada em adultos e, com cautela, em crianças.",
+      "indicacoes": ["Náuseas e vômitos.", "Sensação de estômago cheio ou estufamento.", "Refluxo gastroesofágico."],
+      "como_tomar": "Comprimidos ou suspensão oral. Tome 15 a 30 minutos antes das refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "10mg, 3 vezes ao dia, antes das refeições" },
+        { "faixa": "Crianças", "dosagem": "0,25mg por kg de peso, até 3 vezes ao dia" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Dor de cabeça.", "Diarreia."],
+      "efeitos_graves": ["Alterações no ritmo cardíaco (arritmias) — risco maior em doses altas.", "Produção de leite fora da amamentação (galactorreia)."],
+      "contraindicacoes": ["Pessoas com problemas cardíacos.", "Uso conjunto com antifúngicos (cetoconazol)."],
+      "interacoes": "Evite combinar com medicamentos que prolongam o intervalo QT no coração.",
+      "faq": [
+        { "pergunta": "Domperidona é o mesmo que Metoclopramida?", "resposta": "Não. Ambos combatem náuseas, mas a domperidona age apenas no sistema digestivo e cruza menos a barreira cerebral, causando menos efeitos neurológicos." },
+        { "pergunta": "Posso tomar Domperidona na gravidez?", "resposta": "Apenas se o médico avaliar o risco-benefício. Não use sem prescrição durante a gestação." }
+      ]
+    },
+    {
+      "id": "metoclopramida-plasil",
+      "nome": "Metoclopramida (Plasil)",
+      "categoria": "gastrointestinais",
+      "introducao": "A Metoclopramida é um antiemético (contra enjoo e vômito) que também agiliza o esvaziamento do estômago. É usada em náuseas intensas, inclusive as causadas por quimioterapia.",
+      "indicacoes": ["Náuseas e vômitos intensos.", "Gastroparesia (estômago que esvazia lentamente).", "Refluxo gastroesofágico.", "Náuseas pós-operatórias."],
+      "como_tomar": "Comprimidos, gotas ou injeção (hospitalar). Tome 30 minutos antes das refeições.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "10mg, 3 vezes ao dia" },
+        { "faixa": "Crianças", "dosagem": "0,1mg por kg, sob orientação médica" }
+      ],
+      "efeitos_comuns": ["Sonolência.", "Agitação.", "Diarreia."],
+      "efeitos_graves": ["Discinesia tardia (movimentos involuntários do rosto e corpo) com uso prolongado.", "Sintomas parkinsonianos."],
+      "contraindicacoes": ["Histórico de discinesia tardia.", "Epilepsia.", "Sangramento gastrointestinal.", "Bebês prematuros."],
+      "interacoes": "Potencializa a sedação de álcool e outros depressores do SNC.",
+      "faq": [
+        { "pergunta": "Plasil dá sono?", "resposta": "Sim, a sonolência é um efeito comum. Evite dirigir ou realizar atividades que exijam atenção após tomar." },
+        { "pergunta": "Posso tomar Plasil para enjoo de viagem?", "resposta": "Funciona, mas existem opções mais adequadas para enjoo de movimento. Consulte um farmacêutico antes." }
+      ]
+    },
+    {
+      "id": "vonau-flash",
+      "nome": "Vonau Flash (Ondansetrona)",
+      "categoria": "gastrointestinais",
+      "introducao": "A Ondansetrona (Vonau Flash) é um poderoso antiemético usado principalmente para controlar náuseas e vômitos severos causados por quimioterapia, radioterapia e cirurgias.",
+      "indicacoes": ["Náuseas e vômitos por quimioterapia.", "Náuseas pós-operatórias.", "Vômitos intensos em geral."],
+      "como_tomar": "Comprimidos que se dissolvem na língua (Flash) ou comprimidos comuns. Pode ser tomado com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "4mg a 8mg, até 3 vezes ao dia" },
+        { "faixa": "Crianças acima de 4 anos", "dosagem": "Conforme peso, sob prescrição médica" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Constipação (prisão de ventre).", "Sensação de calor."],
+      "efeitos_graves": ["Alterações no ritmo cardíaco (arritmias) em doses altas.", "Síndrome serotoninérgica (rara, com uso de outros medicamentos)."],
+      "contraindicacoes": ["Pessoas com síndrome do QT longo.", "Uso com apomorfina."],
+      "interacoes": "Cuidado com outros medicamentos que afetam o ritmo cardíaco.",
+      "faq": [
+        { "pergunta": "Vonau Flash precisa de receita?", "resposta": "Sim, a Ondansetrona é um medicamento de uso controlado e exige prescrição médica." },
+        { "pergunta": "Como o Vonau Flash age?", "resposta": "Ele bloqueia receptores de serotonina no intestino e no cérebro que acionam o reflexo do vômito." }
+      ]
+    },
+    {
+      "id": "loratadina",
+      "nome": "Loratadina (Claritin)",
+      "categoria": "antialergicos",
+      "introducao": "A Loratadina é um anti-histamínico de segunda geração muito popular para tratar alergias. Sua maior vantagem é não causar sono na maioria das pessoas.",
+      "indicacoes": ["Rinite alérgica (coriza e espirros).", "Urticária (manchas na pele com coceira).", "Conjuntivite alérgica."],
+      "como_tomar": "Comprimido ou xarope. Pode ser tomado com ou sem alimentos, 1 vez ao dia.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e maiores de 12 anos", "dosagem": "10mg, 1 vez ao dia" },
+        { "faixa": "Crianças de 2 a 12 anos", "dosagem": "5mg (xarope ou comprimido), 1 vez ao dia" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Boca seca.", "Cansaço leve (menos que anti-histamínicos antigos)."],
+      "efeitos_graves": ["Reações alérgicas ao próprio medicamento (raras)."],
+      "contraindicacoes": ["Alérgicos à loratadina.", "Uso com cautela em pacientes com doenças renais ou hepáticas."],
+      "interacoes": "Cimetidina e cetoconazol podem aumentar os níveis de loratadina no sangue.",
+      "faq": [
+        { "pergunta": "Loratadina dá sono?", "resposta": "Raramente. É um anti-histamínico de 2ª geração, desenvolvido justamente para não causar sono. Mas algumas pessoas sensíveis podem sentir leve cansaço." },
+        { "pergunta": "Posso tomar Loratadina todo dia?", "resposta": "Sim, para alergias crônicas como rinite, pode ser usada diariamente, mas o ideal é ter orientação médica para uso prolongado." }
+      ]
+    },
+    {
+      "id": "desloratadina",
+      "nome": "Desloratadina (Desalex)",
+      "categoria": "antialergicos",
+      "introducao": "A Desloratadina é o metabólito ativo da Loratadina, ou seja, é a forma que o organismo produz ao metabolizar a Loratadina. Em geral é considerada um pouco mais potente.",
+      "indicacoes": ["Rinite alérgica.", "Urticária crônica.", "Prurido (coceira intensa) de origem alérgica."],
+      "como_tomar": "Comprimido ou xarope, 1 vez ao dia, com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e maiores de 12 anos", "dosagem": "5mg, 1 vez ao dia" },
+        { "faixa": "Crianças de 1 a 11 anos", "dosagem": "Conforme peso, em xarope" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Boca seca.", "Mialgia (dor muscular)."],
+      "efeitos_graves": ["Taquicardia (rara)."],
+      "contraindicacoes": ["Alérgicos à desloratadina ou loratadina."],
+      "interacoes": "Não possui interações significativas com alimentos. Interações medicamentosas são raras.",
+      "faq": [
+        { "pergunta": "Desloratadina é melhor que Loratadina?", "resposta": "Depende do paciente. A desloratadina é levemente mais potente, mas ambas são eficazes. A escolha deve ser feita com o médico." }
+      ]
+    },
+    {
+      "id": "fexofenadina",
+      "nome": "Fexofenadina (Allegra)",
+      "categoria": "antialergicos",
+      "introducao": "A Fexofenadina é um anti-histamínico de 3ª geração, uma das opções mais modernas para o controle de alergias, sendo altamente eficaz e com mínimo efeito sedativo.",
+      "indicacoes": ["Rinite alérgica sazonal.", "Urticária crônica.", "Sintomas gerais de alergia (coceira, olhos lacrimejantes, espirros)."],
+      "como_tomar": "Comprimido com água, com ou sem alimentos. Evite suco de toranja, laranja ou maçã no momento da ingestão.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e maiores de 12 anos", "dosagem": "120mg ou 180mg, 1 vez ao dia" },
+        { "faixa": "Crianças de 6 a 11 anos", "dosagem": "30mg, 2 vezes ao dia" }
+      ],
+      "efeitos_comuns": ["Dor de cabeça.", "Tontura.", "Náusea."],
+      "efeitos_graves": ["Reações de hipersensibilidade (raras)."],
+      "contraindicacoes": ["Alérgicos à fexofenadina.", "Insuficiência renal grave (ajuste de dose necessário)."],
+      "interacoes": "Sucos cítricos (laranja, toranja) reduzem a absorção. Tome com água.",
+      "faq": [
+        { "pergunta": "Fexofenadina dá sono?", "resposta": "Não. É um dos anti-histamínicos com menor potencial sedativo do mercado." },
+        { "pergunta": "Por que não posso tomar com suco de laranja?", "resposta": "O suco pode reduzir a absorção do medicamento em até 36%, diminuindo sua eficácia." }
+      ]
+    },
+    {
+      "id": "prednisona",
+      "nome": "Prednisona (Meticorten)",
+      "categoria": "antialergicos",
+      "introducao": "A Prednisona é um corticosteroide potente usado para tratar inflamações severas, reações alérgicas graves e doenças autoimunes. Exige receita médica e uso com cautela.",
+      "indicacoes": ["Reações alérgicas graves.", "Asma brônquica.", "Doenças autoimunes (lúpus, artrite reumatoide).", "Inflamações intensas."],
+      "como_tomar": "Comprimidos. Sempre tome pela manhã com alimentos para reduzir o impacto no estômago e no sono.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "5mg a 60mg/dia, conforme a condição tratada (varia muito)" },
+        { "faixa": "Crianças", "dosagem": "Conforme peso e condição, sob orientação pediátrica" }
+      ],
+      "efeitos_comuns": ["Aumento do apetite e peso.", "Retenção de líquidos.", "Alterações de humor.", "Insônia."],
+      "efeitos_graves": ["Osteoporose com uso prolongado.", "Diabetes corticosteroide.", "Supressão do sistema imunológico.", "Síndrome de Cushing."],
+      "contraindicacoes": ["Infecções fúngicas sistêmicas.", "Uso com certos antifúngicos e antivirais."],
+      "interacoes": "Nunca interrompa o uso abruptamente — a retirada deve ser feita gradualmente sob supervisão médica.",
+      "faq": [
+        { "pergunta": "Posso parar de tomar Prednisona de repente?", "resposta": "Não! A interrupção abrupta pode causar uma crise de insuficiência adrenal, que é uma emergência médica. A dose deve ser reduzida gradualmente." },
+        { "pergunta": "Prednisona engorda?", "resposta": "Sim, o aumento do apetite e a retenção de líquidos são efeitos comuns, especialmente com uso prolongado." }
+      ]
+    },
+    {
+      "id": "dexametasona",
+      "nome": "Dexametasona (Decadron)",
+      "categoria": "antialergicos",
+      "introducao": "A Dexametasona é um corticosteroide de alta potência usado em situações que exigem rápido controle de inflamações severas, alergias graves e edemas (inchaços).",
+      "indicacoes": ["Edema cerebral.", "Choque anafilático (reação alérgica grave).", "Inflamações intensas.", "Doenças autoimunes e inflamatórias graves."],
+      "como_tomar": "Disponível em comprimidos, injeção e colírio (para olhos). A forma oral deve ser tomada com alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "0,5mg a 9mg/dia, conforme indicação médica" },
+        { "faixa": "Crianças", "dosagem": "Conforme peso e condição, sob prescrição pediátrica" }
+      ],
+      "efeitos_comuns": ["Aumento do apetite.", "Insônia.", "Nervosismo.", "Retenção de líquidos."],
+      "efeitos_graves": ["Osteoporose.", "Hipertensão.", "Hiperglicemia (aumento da glicose no sangue).", "Supressão imunológica grave."],
+      "contraindicacoes": ["Infecções não tratadas.", "Úlcera péptica ativa.", "Tuberculose ativa."],
+      "interacoes": "Reduz a eficácia de vacinas de vírus vivos. Nunca interrompa o uso abruptamente.",
+      "faq": [
+        { "pergunta": "Dexametasona é mais forte que Prednisona?", "resposta": "Sim, a dexametasona é aproximadamente 7 vezes mais potente que a prednisona, por isso é usada em situações mais críticas." }
+      ]
+    },
+    {
+      "id": "amoxicilina",
+      "nome": "Amoxicilina (Amoxil)",
+      "categoria": "antibioticos",
+      "introducao": "A Amoxicilina é um antibiótico muito utilizado para tratar infecções bacterianas. É segura, bem tolerada e pode ser usada em crianças. Sempre exige prescrição médica.",
+      "indicacoes": ["Infecções de garganta (amigdalite bacteriana).", "Otite (infecção de ouvido).", "Sinusite bacteriana.", "Infecções respiratórias.", "Infecções urinárias.", "Infecções dentárias."],
+      "como_tomar": "Cápsulas, comprimidos ou suspensão oral (para crianças). Pode ser tomada com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "500mg a 875mg, a cada 8 ou 12 horas, por 7 a 10 dias" },
+        { "faixa": "Crianças", "dosagem": "25 a 50mg por kg de peso por dia, divididos em doses" }
+      ],
+      "efeitos_comuns": ["Diarreia.", "Náusea.", "Erupções cutâneas (pode indicar alergia)."],
+      "efeitos_graves": ["Reação alérgica grave (anafilaxia) — rara, mas séria.", "Colite por Clostridioides difficile (diarreia grave)."],
+      "contraindicacoes": ["Pessoas alérgicas à penicilina ou cefalosporinas (possível alergia cruzada).", "Mononucleose infecciosa (causa exantema grave)."],
+      "interacoes": "Pode reduzir a eficácia de contraceptivos orais. Avise seu médico sobre todos os medicamentos em uso.",
+      "faq": [
+        { "pergunta": "Preciso completar o tratamento com Amoxicilina?", "resposta": "Sim! Mesmo sentindo melhora, interromper o antibiótico antes do tempo pode causar resistência bacteriana e o retorno da infecção mais forte." },
+        { "pergunta": "Amoxicilina pode ser tomada com leite?", "resposta": "Sim, pode ser tomada com alimentos, incluindo leite, o que pode até ajudar a reduzir o desconforto gástrico." }
+      ]
+    },
+    {
+      "id": "amoxicilina-clavulanato",
+      "nome": "Amoxicilina + Clavulanato (Clavulin)",
+      "categoria": "antibioticos",
+      "introducao": "A Amoxicilina com Clavulanato de Potássio é uma versão mais potente que age contra bactérias resistentes à amoxicilina simples. É usada em infecções mais complexas.",
+      "indicacoes": ["Sinusite bacteriana aguda.", "Otite média recorrente.", "Pneumonia adquirida na comunidade.", "Infecções de pele e tecidos moles.", "Infecções do trato urinário complicadas."],
+      "como_tomar": "Comprimidos ou suspensão oral. Tome sempre com alimentos para reduzir o desconforto gástrico.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "875mg/125mg, a cada 12 horas, por 5 a 10 dias" },
+        { "faixa": "Crianças", "dosagem": "Conforme peso e formulação pediátrica" }
+      ],
+      "efeitos_comuns": ["Diarreia (mais frequente que a amoxicilina simples).", "Náusea.", "Erupção cutânea."],
+      "efeitos_graves": ["Hepatite colestática (rara).", "Reação alérgica grave."],
+      "contraindicacoes": ["Alérgicos a penicilinas.", "Histórico de hepatite causada por amoxicilina/clavulanato.", "Insuficiência hepática grave."],
+      "interacoes": "O anticoagulante Varfarina pode ter seu efeito potencializado. Informe todos os medicamentos ao médico.",
+      "faq": [
+        { "pergunta": "Por que Clavulin causa mais diarreia que Amoxicilina?", "resposta": "O clavulanato de potássio pode irritar mais o intestino, tornando a diarreia um efeito colateral mais comum nesta formulação." }
+      ]
+    },
+    {
+      "id": "azitromicina",
+      "nome": "Azitromicina (Astro / Zitromax)",
+      "categoria": "antibioticos",
+      "introducao": "A Azitromicina é um antibiótico do grupo dos macrolídeos, muito usado em infecções respiratórias e de transmissão sexual. Seu tratamento costuma ser curto (3 a 5 dias).",
+      "indicacoes": ["Pneumonia bacteriana.", "Bronquite.", "Faringite e amigdalite.", "Sinusite.", "Infecções por clamídia."],
+      "como_tomar": "Comprimidos ou suspensão oral. Tome 1 hora antes ou 2 horas depois das refeições para melhor absorção.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "500mg, 1 vez ao dia, por 3 dias (ou conforme prescrição)" },
+        { "faixa": "Crianças", "dosagem": "10mg/kg no 1º dia; 5mg/kg do 2º ao 5º dia" }
+      ],
+      "efeitos_comuns": ["Diarreia.", "Náusea.", "Dor abdominal."],
+      "efeitos_graves": ["Arritmias cardíacas (prolongamento do QT).", "Hepatotoxicidade (rara)."],
+      "contraindicacoes": ["Pessoas com histórico de arritmias cardíacas.", "Alérgicos a macrolídeos.", "Disfunção hepática grave."],
+      "interacoes": "Evite com antiácidos à base de alumínio e magnésio — tome a azitromicina 1 hora antes deles.",
+      "faq": [
+        { "pergunta": "Azitromicina funciona para gripe?", "resposta": "Não. A gripe é causada por vírus, e antibióticos como a azitromicina não têm efeito em infecções virais. Use apenas para infecções bacterianas confirmadas." },
+        { "pergunta": "3 dias de Azitromicina são suficientes?", "resposta": "Para muitas infecções sim, pois o medicamento continua agindo por dias após a última dose graças à sua meia-vida longa." }
+      ]
+    },
+    {
+      "id": "cefalexina",
+      "nome": "Cefalexina (Keflex)",
+      "categoria": "antibioticos",
+      "introducao": "A Cefalexina é um antibiótico cefalosporínico de 1ª geração, eficaz contra infecções bacterianas de pele, ossos e trato urinário. Exige receita médica.",
+      "indicacoes": ["Infecções de pele (impetigo, erisipela, celulite).", "Infecções do trato urinário.", "Infecções ósseas (osteomielite).", "Faringite estreptocócica."],
+      "como_tomar": "Cápsulas ou suspensão oral. Pode ser tomada com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "250mg a 500mg, a cada 6 horas" },
+        { "faixa": "Crianças", "dosagem": "25 a 50mg/kg/dia, divididos em 4 doses" }
+      ],
+      "efeitos_comuns": ["Diarreia.", "Náusea.", "Dor de estômago."],
+      "efeitos_graves": ["Colite por C. difficile.", "Reação alérgica grave."],
+      "contraindicacoes": ["Alérgicos a cefalosporinas.", "Cuidado em pessoas alérgicas à penicilina (5-10% de alergia cruzada)."],
+      "interacoes": "Probenecida pode aumentar os níveis de cefalexina no sangue.",
+      "faq": [
+        { "pergunta": "Posso tomar Cefalexina se sou alérgico à Penicilina?", "resposta": "Existe uma pequena chance de alergia cruzada. Informe sempre seu médico sobre sua alergia à penicilina antes de iniciar o tratamento." }
+      ]
+    },
+    {
+      "id": "ciprofloxacino",
+      "nome": "Ciprofloxacino (Cipro)",
+      "categoria": "antibioticos",
+      "introducao": "O Ciprofloxacino é um antibiótico de amplo espectro da família das fluoroquinolonas, usado para infecções mais resistentes, especialmente do trato urinário e gastrointestinal.",
+      "indicacoes": ["Infecções urinárias complicadas.", "Diarreia bacteriana (como a por Salmonela).", "Sinusite e pneumonia bacteriana.", "Infecções de pele e ossos.", "Profilaxia de antraz (carbúnculo)."],
+      "como_tomar": "Comprimidos ou infusão intravenosa (hospitalar). Tome com bastante água. Evite laticínios e antiácidos próximo ao horário da dose.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "250mg a 750mg, a cada 12 horas (varia conforme a infecção)" },
+        { "faixa": "Crianças", "dosagem": "Uso restrito — apenas sob rigorosa orientação médica" }
+      ],
+      "efeitos_comuns": ["Náusea.", "Diarreia.", "Dor de cabeça.", "Tontura."],
+      "efeitos_graves": ["Tendinite e ruptura de tendão (especialmente o de Aquiles).", "Neuropatia periférica.", "Prolongamento do QT cardíaco."],
+      "contraindicacoes": ["Crianças e adolescentes (pode afetar o desenvolvimento das cartilagens).", "Gestantes e lactantes.", "Histórico de problemas nos tendões com quinolonas."],
+      "interacoes": "Antiácidos com alumínio/magnésio, leite e suplementos de ferro reduzem significativamente a absorção. Tome 2 horas antes ou 6 horas depois deles.",
+      "faq": [
+        { "pergunta": "Ciprofloxacino pode causar dor no tendão?", "resposta": "Sim. Uma das complicações raras mas sérias é a tendinite ou ruptura do tendão de Aquiles, especialmente em idosos ou que tomam corticoides." },
+        { "pergunta": "Posso tomar Ciprofloxacino com leite?", "resposta": "Não é recomendado. O cálcio do leite pode se ligar ao ciprofloxacino e reduzir muito sua absorção." }
+      ]
+    },
+    {
+      "id": "ivermectina",
+      "nome": "Ivermectina (Revectina)",
+      "categoria": "antibioticos",
+      "introducao": "A Ivermectina é um antiparasitário eficaz contra uma série de parasitas internos e externos. Exige prescrição médica e seu uso deve ser restrito às indicações aprovadas.",
+      "indicacoes": ["Escabiose (sarna).", "Pediculose (piolho — uso tópico).", "Estrongiloidíase (verme intestinal específico).", "Oncocercose."],
+      "como_tomar": "Comprimidos, tomados em jejum com bastante água.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos (acima de 15kg)", "dosagem": "200mcg por kg de peso, dose única (varia conforme a indicação)" },
+        { "faixa": "Crianças", "dosagem": "Apenas para maiores de 15kg, sob prescrição médica" }
+      ],
+      "efeitos_comuns": ["Tontura.", "Náusea.", "Diarreia.", "Coceira."],
+      "efeitos_graves": ["Reação de Mazzotti (febre, erupção, inchaço) ao tratar oncocercose.", "Encefalopatia (em doses muito altas)."],
+      "contraindicacoes": ["Crianças com menos de 15kg.", "Gestantes.", "Pessoas com meningite ou outras condições que comprometam a barreira hematoencefálica."],
+      "interacoes": "Pode potencializar o efeito de anticoagulantes. Evite benzodiazepínicos próximo ao uso.",
+      "faq": [
+        { "pergunta": "Ivermectina previne ou trata COVID-19?", "resposta": "Não. Estudos clínicos não comprovaram eficácia da ivermectina contra COVID-19. Use apenas para as indicações aprovadas e com prescrição médica." }
+      ]
+    },
+    {
+      "id": "albendazol",
+      "nome": "Albendazol",
+      "categoria": "antibioticos",
+      "introducao": "O Albendazol é um anti-helmíntico de amplo espectro usado para tratar diversas verminoses. É o vermífugo mais indicado para uso em adultos e crianças acima de 2 anos.",
+      "indicacoes": ["Ascaridíase (lombriga).", "Oxiuríase (enterobíase, verme-oxiúro).", "Ancilostomíase (amarelão).", "Teníase.", "Giardíase.", "Neurocisticercose (com supervisão especializada)."],
+      "como_tomar": "Comprimidos mastigáveis ou suspensão oral. Para verminoses intestinais, geralmente dose única. Para cisticercose, tratamento prolongado.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos e crianças acima de 2 anos", "dosagem": "400mg, dose única (para verminoses intestinais comuns)" },
+        { "faixa": "Crianças abaixo de 2 anos", "dosagem": "Consultar pediatra" }
+      ],
+      "efeitos_comuns": ["Dor abdominal.", "Náusea.", "Dor de cabeça."],
+      "efeitos_graves": ["Toxicidade hepática com uso prolongado.", "Leucopenia (diminuição de glóbulos brancos)."],
+      "contraindicacoes": ["Gestantes (especialmente no 1º trimestre).", "Alérgicos ao albendazol ou ao mebendazol."],
+      "interacoes": "Cimetidina e dexametasona podem aumentar os níveis do medicamento no sangue.",
+      "faq": [
+        { "pergunta": "Com que frequência devo tomar vermífugo?", "resposta": "Em regiões de alta prevalência de verminoses, recomenda-se o uso 2 vezes por ano. Consulte seu médico ou siga as campanhas de saúde pública." }
+      ]
+    },
+    {
+      "id": "secnidazol",
+      "nome": "Secnidazol",
+      "categoria": "antibioticos",
+      "introducao": "O Secnidazol é um antiparasitário e antibacteriano usado para tratar infecções intestinais por protozoários e certas infecções vaginais. Tem a conveniência de ser dose única.",
+      "indicacoes": ["Giardíase (giárdia).", "Amebíase (ameba intestinal).", "Vaginose bacteriana.", "Tricomoníase."],
+      "como_tomar": "Comprimidos ou sachê (pó para dissolução). Geralmente dose única, tomada com alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "2g, dose única" },
+        { "faixa": "Crianças", "dosagem": "30mg/kg, dose única (máx. 2g)" }
+      ],
+      "efeitos_comuns": ["Náusea.", "Gosto metálico na boca.", "Tontura."],
+      "efeitos_graves": ["Neuropatia periférica com uso repetido.", "Reações alérgicas."],
+      "contraindicacoes": ["Gestantes (especialmente no 1º trimestre).", "Lactantes (suspender amamentação por 72h após a dose).", "Alérgicos ao secnidazol ou metronidazol."],
+      "interacoes": "Álcool causa reação tipo dissulfiram (náusea intensa, rubor, palpitações). Evite por 48h após a dose.",
+      "faq": [
+        { "pergunta": "Posso tomar álcool após o Secnidazol?", "resposta": "Não. Você deve evitar o álcool por pelo menos 48 horas após tomar o secnidazol, pois a reação pode ser muito desagradável." }
+      ]
+    },
+    {
+      "id": "nitazoxanida",
+      "nome": "Nitazoxanida (Annita)",
+      "categoria": "antibioticos",
+      "introducao": "A Nitazoxanida é um antiparasitário de amplo espectro, eficaz tanto contra protozoários quanto contra alguns vírus e bactérias. É bem tolerada por crianças.",
+      "indicacoes": ["Giardíase.", "Criptosporidiose.", "Amebíase.", "Diarreias de origem parasitária."],
+      "como_tomar": "Comprimidos ou suspensão oral. Sempre tome com alimentos para melhorar a absorção e reduzir efeitos gástricos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "500mg, 2 vezes ao dia, por 3 dias" },
+        { "faixa": "Crianças de 1 a 3 anos", "dosagem": "100mg (5mL suspensão), 2 vezes ao dia, por 3 dias" },
+        { "faixa": "Crianças de 4 a 11 anos", "dosagem": "200mg (10mL suspensão), 2 vezes ao dia, por 3 dias" }
+      ],
+      "efeitos_comuns": ["Dor abdominal.", "Diarreia.", "Náusea.", "Urina com coloração amarelada (normal)."],
+      "efeitos_graves": ["Reações alérgicas (raras)."],
+      "contraindicacoes": ["Alérgicos à nitazoxanida."],
+      "interacoes": "Pode aumentar a concentração de medicamentos ligados à albumina no sangue (como a Varfarina).",
+      "faq": [
+        { "pergunta": "Minha urina ficou amarela após tomar Nitazoxanida, é normal?", "resposta": "Sim. A coloração amarelada da urina é um efeito esperado e inofensivo do medicamento." }
+      ]
+    },
+    {
+      "id": "losartana",
+      "nome": "Losartana Potássica",
+      "categoria": "cardiovascular",
+      "introducao": "A Losartana é um dos medicamentos mais usados para tratar pressão alta (hipertensão arterial). Também protege os rins em pacientes diabéticos. Uso contínuo e sob prescrição médica.",
+      "indicacoes": ["Hipertensão arterial (pressão alta).", "Insuficiência cardíaca.", "Proteção renal em diabéticos com nefropatia.", "Redução do risco de AVC em hipertensos."],
+      "como_tomar": "Comprimidos, 1 vez ao dia, com ou sem alimentos. Tome sempre no mesmo horário.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "25mg a 100mg, 1 vez ao dia" },
+        { "faixa": "Crianças (acima de 6 anos)", "dosagem": "Conforme peso, sob orientação pediátrica" }
+      ],
+      "efeitos_comuns": ["Tontura (especialmente no início).", "Cansaço.", "Tosse seca (menos comum que com outros anti-hipertensivos)."],
+      "efeitos_graves": ["Hiperpotassemia (aumento de potássio no sangue).", "Queda brusca de pressão.", "Dano renal em casos raros."],
+      "contraindicacoes": ["Gestantes (especialmente 2º e 3º trimestres — risco grave ao feto).", "Alérgicos à losartana.", "Uso conjunto com alisquireno em diabéticos."],
+      "interacoes": "Anti-inflamatórios (ibuprofeno, naproxeno) podem reduzir sua eficácia. Evite suplementos de potássio sem orientação.",
+      "faq": [
+        { "pergunta": "Posso parar de tomar Losartana se minha pressão normalizar?", "resposta": "Não sem autorização médica. A pressão normaliza por causa do medicamento. Parar pode fazer a pressão subir novamente." },
+        { "pergunta": "Losartana causa tosse?", "resposta": "Muito raramente, ao contrário dos IECA (como o Enalapril). Se tiver tosse intensa, converse com seu médico." }
+      ]
+    },
+    {
+      "id": "atenolol",
+      "nome": "Atenolol",
+      "categoria": "cardiovascular",
+      "introducao": "O Atenolol é um betabloqueador usado para tratar pressão alta, angina e problemas no ritmo cardíaco. Age desacelerando o coração e reduzindo a força das contrações.",
+      "indicacoes": ["Hipertensão arterial.", "Angina pectoris (dor no peito por falta de sangue no coração).", "Taquicardia e arritmias cardíacas.", "Prevenção de infartos."],
+      "como_tomar": "Comprimidos, 1 vez ao dia, com ou sem alimentos, sempre no mesmo horário.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "25mg a 100mg, 1 vez ao dia" },
+        { "faixa": "Crianças", "dosagem": "Apenas sob prescrição cardiológica pediátrica" }
+      ],
+      "efeitos_comuns": ["Cansaço e fraqueza.", "Pés e mãos frios.", "Bradicardia (coração mais lento).", "Sonolência."],
+      "efeitos_graves": ["Broncoespasmo (contração dos brônquios) — perigoso para asmáticos.", "Bloqueio cardíaco grave."],
+      "contraindicacoes": ["Asma brônquica.", "DPOC grave.", "Bradicardia severa.", "Bloqueio cardíaco de 2º e 3º grau."],
+      "interacoes": "Não combine com outros betabloqueadores. Cuidado com antiarrítmicos e antagonistas de cálcio.",
+      "faq": [
+        { "pergunta": "Atenolol pode ser tomado por asmáticos?", "resposta": "Não é recomendado. O Atenolol pode causar broncoespasmo, dificultando a respiração em pessoas com asma ou DPOC." },
+        { "pergunta": "Posso parar de tomar Atenolol de repente?", "resposta": "Não! A interrupção abrupta pode causar angina de rebote ou arritmias graves. Sempre reduza a dose gradualmente com orientação médica." }
+      ]
+    },
+    {
+      "id": "metformina",
+      "nome": "Metformina (Glifage)",
+      "categoria": "cardiovascular",
+      "introducao": "A Metformina é o medicamento mais prescrito para Diabetes Tipo 2. Age reduzindo a produção de glicose pelo fígado e melhorando a sensibilidade à insulina.",
+      "indicacoes": ["Diabetes Mellitus tipo 2.", "Síndrome dos ovários policísticos (SOP) — uso off-label.", "Prevenção do diabetes em pacientes de alto risco."],
+      "como_tomar": "Comprimidos. Sempre tome com alimentos para reduzir os efeitos gastrointestinais. Não esmague comprimidos de liberação prolongada.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "500mg a 2.000mg/dia, divididos em 2 a 3 doses com as refeições" },
+        { "faixa": "Crianças acima de 10 anos", "dosagem": "Conforme orientação pediátrica endocrinológica" }
+      ],
+      "efeitos_comuns": ["Diarreia e desconforto intestinal (especialmente no início).", "Náusea.", "Perda leve de apetite."],
+      "efeitos_graves": ["Acidose lática (muito rara, mas grave — risco maior em insuficiência renal)."],
+      "contraindicacoes": ["Insuficiência renal grave.", "Insuficiência hepática.", "Condições que causem hipóxia (falta de oxigênio nos tecidos)."],
+      "interacoes": "Contraste iodado para exames pode precipitar insuficiência renal — suspenda a metformina antes de exames com contraste.",
+      "faq": [
+        { "pergunta": "Metformina emagrece?", "resposta": "Pode causar perda leve de peso por reduzir o apetite, mas não é um medicamento para emagrecer. Não tome sem indicação médica para perda de peso." },
+        { "pergunta": "Por que devo parar a Metformina antes de fazer tomografia?", "resposta": "O contraste usado em tomografias pode afetar os rins e aumentar o risco de acidose lática quando combinado com metformina." }
+      ]
+    },
+    {
+      "id": "sinvastatina",
+      "nome": "Sinvastatina",
+      "categoria": "cardiovascular",
+      "introducao": "A Sinvastatina é uma estatina usada para reduzir o colesterol ruim (LDL) e triglicerídeos, e aumentar o colesterol bom (HDL). É fundamental na prevenção de doenças cardiovasculares.",
+      "indicacoes": ["Hipercolesterolemia (colesterol alto).", "Prevenção de infartos e AVC em pacientes de alto risco.", "Hipertrigliceridemia (triglicerídeos altos)."],
+      "como_tomar": "Comprimidos, geralmente à noite (o fígado produz mais colesterol durante o sono). Tome com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "10mg a 40mg, 1 vez ao dia, à noite" },
+        { "faixa": "Crianças acima de 10 anos", "dosagem": "Sob orientação médica especializada" }
+      ],
+      "efeitos_comuns": ["Dor muscular (mialgia).", "Dor de cabeça.", "Náusea."],
+      "efeitos_graves": ["Rabdomiólise (destruição muscular grave — rara mas séria).", "Hepatotoxicidade (dano ao fígado)."],
+      "contraindicacoes": ["Gestantes.", "Lactantes.", "Doenças hepáticas ativas.", "Uso com certos antifúngicos e antibióticos (aumentam o risco de miopatia)."],
+      "interacoes": "Suco de toranja (grapefruit) aumenta significativamente os níveis de sinvastatina — evite. Avisem o médico sobre todos os medicamentos.",
+      "faq": [
+        { "pergunta": "Sinto dores musculares desde que comecei a Sinvastatina, o que faço?", "resposta": "Avise seu médico imediatamente. Dores musculares podem ser sinal de miopatia, um efeito colateral que exige avaliação e possível troca do medicamento." },
+        { "pergunta": "Por que tomar Sinvastatina à noite?", "resposta": "O fígado é mais ativo na produção de colesterol à noite. Tomar à noite maximiza a eficácia do medicamento." }
+      ]
+    },
+    {
+      "id": "hidroclorotiazida",
+      "nome": "Hidroclorotiazida",
+      "categoria": "cardiovascular",
+      "introducao": "A Hidroclorotiazida é um diurético tiazídico usado para tratar hipertensão arterial e retenção de líquidos. É frequentemente combinada com outros anti-hipertensivos.",
+      "indicacoes": ["Hipertensão arterial.", "Edema (inchaço) por insuficiência cardíaca, renal ou hepática.", "Diabetes insípido nefrogênico."],
+      "como_tomar": "Comprimidos, geralmente pela manhã para evitar acordar à noite para urinar.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos (hipertensão)", "dosagem": "12,5mg a 50mg, 1 vez ao dia" },
+        { "faixa": "Crianças", "dosagem": "Conforme peso, sob prescrição pediátrica" }
+      ],
+      "efeitos_comuns": ["Aumento da frequência urinária.", "Queda de potássio (hipocalemia — causando câimbras e fraqueza).", "Tontura."],
+      "efeitos_graves": ["Desequilíbrio de eletrólitos (sódio e potássio).", "Hiperglicemia (aumento do açúcar no sangue).", "Gota (aumento do ácido úrico)."],
+      "contraindicacoes": ["Anúria (incapacidade de produzir urina).", "Alérgicos a sulfonamidas.", "Insuficiência renal grave."],
+      "interacoes": "Evite anti-inflamatórios (reduzem sua eficácia). Lítio não deve ser combinado (risco de toxicidade).",
+      "faq": [
+        { "pergunta": "Por que tomo Hidroclorotiazida de manhã?", "resposta": "Por ser um diurético, ela aumenta a produção de urina. Tomar pela manhã evita que você precise acordar várias vezes à noite para urinar." }
+      ]
+    },
+    {
+      "id": "enalapril",
+      "nome": "Enalapril",
+      "categoria": "cardiovascular",
+      "introducao": "O Enalapril é um IECA (Inibidor da Enzima Conversora de Angiotensina) usado para tratar pressão alta e insuficiência cardíaca. É muito eficaz e acessível.",
+      "indicacoes": ["Hipertensão arterial.", "Insuficiência cardíaca.", "Proteção renal em diabéticos.", "Prevenção de problemas cardíacos após infarto."],
+      "como_tomar": "Comprimidos, 1 ou 2 vezes ao dia, com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "2,5mg a 40mg/dia, divididos em 1 ou 2 doses" },
+        { "faixa": "Crianças", "dosagem": "Sob rigorosa orientação pediátrica" }
+      ],
+      "efeitos_comuns": ["Tosse seca persistente (muito comum — efeito característico dos IECAs).", "Tontura.", "Dor de cabeça."],
+      "efeitos_graves": ["Angioedema (inchaço grave de lábios, língua e garganta — emergência médica).", "Hiperpotassemia.", "Insuficiência renal."],
+      "contraindicacoes": ["Gestantes (especialmente 2º e 3º trimestres).", "Histórico de angioedema.", "Alérgicos a IECAs."],
+      "interacoes": "Não combine com AINEs sem orientação. Potássio e suplementos de potássio aumentam o risco de hiperpotassemia.",
+      "faq": [
+        { "pergunta": "Enalapril causa tosse?", "resposta": "Sim. A tosse seca persistente é um efeito colateral muito comum dos IECAs como o Enalapril, afetando até 20% dos pacientes. Se incomodar muito, o médico pode trocar para Losartana." }
+      ]
+    },
+    {
+      "id": "espironolactona",
+      "nome": "Espironolactona",
+      "categoria": "cardiovascular",
+      "introducao": "A Espironolactona é um diurético poupador de potássio usado para tratar hipertensão, insuficiência cardíaca e retenção de líquidos. Também tem uso em acne e excesso de pelos em mulheres.",
+      "indicacoes": ["Insuficiência cardíaca.", "Cirrose com ascite (acúmulo de líquido na barriga).", "Hipertensão resistente.", "SOP e acne de origem hormonal em mulheres."],
+      "como_tomar": "Comprimidos, com alimentos para melhorar a absorção.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "25mg a 200mg/dia, conforme indicação" },
+        { "faixa": "Crianças", "dosagem": "Conforme peso, sob prescrição pediátrica" }
+      ],
+      "efeitos_comuns": ["Aumento do potássio (hipercalemia).", "Ginecomastia (crescimento das mamas em homens).", "Irregularidade menstrual em mulheres.", "Tontura."],
+      "efeitos_graves": ["Hipercalemia grave (pode causar arritmias cardíacas)."],
+      "contraindicacoes": ["Insuficiência renal grave.", "Hiperpotassemia.", "Gestantes."],
+      "interacoes": "Não combine com outros medicamentos que aumentam o potássio (IECAs, suplementos de potássio).",
+      "faq": [
+        { "pergunta": "Espironolactona serve para acne?", "resposta": "Sim, em mulheres, pode ser usada para tratar acne de origem hormonal, pois bloqueia os efeitos dos andrógenos na pele." }
+      ]
+    },
+    {
+      "id": "clonazepam",
+      "nome": "Clonazepam (Rivotril)",
+      "categoria": "sistema-nervoso",
+      "introducao": "O Clonazepam é um benzodiazepínico de uso controlado (tarja preta) usado para tratar epilepsia, transtornos de ansiedade e síndrome do pânico. Tem alto potencial de dependência.",
+      "indicacoes": ["Epilepsia e convulsões.", "Transtorno do pânico.", "Ansiedade generalizada.", "Insônia (uso pontual e com cautela)."],
+      "como_tomar": "Comprimidos ou gotas. Tome conforme prescrito pelo médico. Não aumente a dose por conta própria.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos (ansiedade/pânico)", "dosagem": "0,25mg a 2mg/dia, divididos em doses (varia muito)" },
+        { "faixa": "Crianças (epilepsia)", "dosagem": "Conforme peso, sob rigorosa supervisão neurológica" }
+      ],
+      "efeitos_comuns": ["Sonolência.", "Tontura.", "Falta de coordenação motora.", "Comprometimento da memória."],
+      "efeitos_graves": ["Dependência física e psicológica.", "Depressão respiratória em doses altas.", "Síndrome de abstinência na retirada abrupta."],
+      "contraindicacoes": ["Glaucoma agudo.", "Insuficiência hepática grave.", "Miastenia grave.", "Gravidez."],
+      "interacoes": "Álcool potencializa muito a sedação — evite. Outros depressores do SNC aumentam o risco.",
+      "faq": [
+        { "pergunta": "Clonazepam vicia?", "resposta": "Sim. O clonazepam tem alto potencial de dependência física e psicológica, especialmente com uso prolongado. Por isso é tarja preta e só pode ser dispensado com receita médica especial." },
+        { "pergunta": "Posso parar o Clonazepam de repente?", "resposta": "Não. A retirada abrupta pode causar convulsões e sintomas graves de abstinência. A dose deve ser reduzida gradualmente sob supervisão médica." }
+      ]
+    },
+    {
+      "id": "fluoxetina",
+      "nome": "Fluoxetina (Prozac)",
+      "categoria": "sistema-nervoso",
+      "introducao": "A Fluoxetina é um antidepressivo ISRS (Inibidor Seletivo da Recaptação de Serotonina) muito prescrito para tratar depressão, ansiedade e TOC. O efeito completo leva algumas semanas para aparecer.",
+      "indicacoes": ["Transtorno depressivo maior.", "Transtorno obsessivo-compulsivo (TOC).", "Bulimia nervosa.", "Transtorno do pânico.", "Ansiedade."],
+      "como_tomar": "Cápsulas ou solução oral. Pode ser tomada com ou sem alimentos, geralmente pela manhã.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "20mg a 80mg/dia, geralmente 1 vez ao dia" },
+        { "faixa": "Crianças acima de 8 anos (com depressão)", "dosagem": "10mg a 20mg/dia, sob estrita supervisão psiquiátrica" }
+      ],
+      "efeitos_comuns": ["Náusea (especialmente no início).", "Insônia ou sonolência.", "Dor de cabeça.", "Diminuição da libido."],
+      "efeitos_graves": ["Síndrome serotoninérgica (rara, em combinação com outros medicamentos).", "Pensamentos suicidas (especialmente em jovens — monitorar início do tratamento)."],
+      "contraindicacoes": ["Uso com IMAOs (não pode ser combinado — risco grave).", "Gestantes (avaliar risco-benefício com médico)."],
+      "interacoes": "Não use junto com tramadol, triptanos ou outros serotoninérgicos sem avaliação médica.",
+      "faq": [
+        { "pergunta": "Quando a Fluoxetina começa a fazer efeito?", "resposta": "O efeito completo no humor geralmente leva de 4 a 6 semanas. Nos primeiros dias, pode haver até leve piora. Não abandone o tratamento antes desse prazo." },
+        { "pergunta": "Fluoxetina engorda?", "resposta": "Em geral, não. Ela tende a ser neutra ou até causar leve perda de peso no início. Porém, com uso prolongado, algumas pessoas relatam ganho de peso." }
+      ]
+    },
+    {
+      "id": "sertralina",
+      "nome": "Sertralina (Zoloft)",
+      "categoria": "sistema-nervoso",
+      "introducao": "A Sertralina é um ISRS amplamente prescrito para depressão e ansiedade. É considerada uma das opções mais seguras para uso em adultos, idosos e durante a gravidez (quando necessário).",
+      "indicacoes": ["Depressão.", "Ansiedade generalizada.", "TOC.", "Transtorno do pânico.", "TEPT (Transtorno de Estresse Pós-Traumático)."],
+      "como_tomar": "Comprimidos. Tome 1 vez ao dia, com ou sem alimentos, sempre no mesmo horário.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "50mg a 200mg/dia, 1 vez ao dia" },
+        { "faixa": "Crianças acima de 6 anos (TOC)", "dosagem": "25mg a 200mg/dia, sob supervisão psiquiátrica" }
+      ],
+      "efeitos_comuns": ["Diarreia.", "Náusea.", "Insônia.", "Boca seca.", "Diminuição da libido."],
+      "efeitos_graves": ["Síndrome serotoninérgica (em combinação com outros medicamentos).", "Hiponatremia (queda do sódio no sangue — mais comum em idosos)."],
+      "contraindicacoes": ["Uso com IMAOs.", "Uso com pimozida."],
+      "interacoes": "Não combine com IMAOs. Cuidado com anticoagulantes e outros serotoninérgicos.",
+      "faq": [
+        { "pergunta": "Sertralina dá sono ou insônia?", "resposta": "Pode causar ambos, dependendo da pessoa. Se causar insônia, tome pela manhã. Se causar sonolência, tome à noite." },
+        { "pergunta": "Posso tomar Sertralina na gravidez?", "resposta": "É considerada uma das opções mais estudadas e seguras entre os antidepressivos durante a gravidez, mas sempre com avaliação médica cuidadosa." }
+      ]
+    },
+    {
+      "id": "escitalopram",
+      "nome": "Escitalopram (Lexapro)",
+      "categoria": "sistema-nervoso",
+      "introducao": "O Escitalopram é um ISRS de última geração, considerado um dos mais seletivos e tolerados para tratar depressão e transtornos de ansiedade.",
+      "indicacoes": ["Transtorno depressivo maior.", "Transtorno de ansiedade generalizada.", "Transtorno do pânico.", "Fobia social."],
+      "como_tomar": "Comprimidos ou solução oral. 1 vez ao dia, com ou sem alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "10mg a 20mg/dia" },
+        { "faixa": "Adolescentes (12 a 17 anos)", "dosagem": "10mg/dia, sob supervisão médica" }
+      ],
+      "efeitos_comuns": ["Náusea.", "Insônia.", "Sudorese excessiva.", "Disfunção sexual."],
+      "efeitos_graves": ["Prolongamento do QT cardíaco.", "Síndrome serotoninérgica."],
+      "contraindicacoes": ["Uso com IMAOs.", "Uso com pimozida.", "Síndrome do QT longo congênita."],
+      "interacoes": "Cautela com outros medicamentos que prolongam o QT cardíaco.",
+      "faq": [
+        { "pergunta": "Escitalopram é melhor que outros antidepressivos?", "resposta": "Estudos indicam que o escitalopram tem um bom perfil de eficácia e tolerabilidade, mas 'melhor' depende do perfil de cada paciente. O médico é quem deve avaliar." }
+      ]
+    },
+    {
+      "id": "amitriptilina",
+      "nome": "Amitriptilina",
+      "categoria": "sistema-nervoso",
+      "introducao": "A Amitriptilina é um antidepressivo tricíclico mais antigo, mas ainda muito útil para depressão resistente, dor crônica e enxaqueca. Tem mais efeitos colaterais que os antidepressivos modernos.",
+      "indicacoes": ["Depressão.", "Dor crônica neuropática.", "Prevenção de enxaqueca.", "Fibromialgia.", "Insônia (doses baixas)."],
+      "como_tomar": "Comprimidos. Geralmente tomada à noite pela sedação que causa.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos (depressão)", "dosagem": "75mg a 150mg/dia" },
+        { "faixa": "Adultos (dor/enxaqueca)", "dosagem": "10mg a 75mg/dia (doses menores)" }
+      ],
+      "efeitos_comuns": ["Boca seca.", "Sonolência intensa.", "Constipação.", "Visão turva.", "Ganho de peso."],
+      "efeitos_graves": ["Arritmias cardíacas.", "Retenção urinária.", "Toxicidade grave em overdose."],
+      "contraindicacoes": ["Infarto recente.", "Arritmias cardíacas.", "Glaucoma de ângulo fechado.", "Uso com IMAOs."],
+      "interacoes": "Potencializa álcool e outros sedativos. Não combine com IMAOs.",
+      "faq": [
+        { "pergunta": "Por que tomar Amitriptilina à noite?", "resposta": "Ela causa sonolência intensa, que é aproveitada para melhorar o sono. Tomada à noite, o pico de sedação ocorre durante o sono, causando menos prejuízo ao dia a dia." }
+      ]
+    },
+    {
+      "id": "levotiroxina",
+      "nome": "Levotiroxina Sódica (Puran T4)",
+      "categoria": "hormonios",
+      "introducao": "A Levotiroxina é um hormônio sintético da tireoide usado para tratar o hipotireoidismo (tireoide lenta). É de uso contínuo e a dose deve ser ajustada periodicamente com exames.",
+      "indicacoes": ["Hipotireoidismo (tireoide com baixa produção de hormônios).", "Bócio (aumento da tireoide).", "Câncer de tireoide (doses supressoras após cirurgia)."],
+      "como_tomar": "Comprimido em jejum, 30 a 60 minutos antes do café da manhã, com água (somente). Não tome com leite, café ou outros alimentos.",
+      "tabela_dosagem": [
+        { "faixa": "Adultos", "dosagem": "Individualizada pelo médico conforme exames de TSH" },
+        { "faixa": "Crianças", "dosagem": "Conforme peso e exames, sob endocrinologia pediátrica" }
+      ],
+      "efeitos_comuns": ["Quando a dose está correta, praticamente sem efeitos.", "Dose alta pode causar: palpitações, sudorese, emagrecimento, insônia."],
+      "efeitos_graves": ["Crise tireotóxica (se dose muito alta por tempo prolongado).", "Arritmias cardíacas em pacientes cardíacos."],
+      "contraindicacoes": ["Infarto recente (uso com extrema cautela).", "Tireotoxicose não tratada."],
+      "interacoes": "Cálcio, ferro, antiácidos e soja podem reduzir a absorção — mantenha intervalo de 2 a 4 horas entre eles e a levotiroxina.",
+      "faq": [
+        { "pergunta": "Por que devo tomar Levotiroxina em jejum?", "resposta": "Alimentos, especialmente laticínios, café e fibras, reduzem significativamente a absorção do medicamento, podendo tornar o tratamento ineficaz." },
+        { "pergunta": "Vou tomar Levotiroxina para o resto da vida?", "resposta": "Na maioria dos casos de hipotireoidismo crônico (como a Tireoidite de Hashimoto), sim. A tireoide não se recupera e precisa da reposição hormonal contínua." }
+      ]
+    }
+  ]
+}
